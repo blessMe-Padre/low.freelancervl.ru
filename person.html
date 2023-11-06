@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Агенство вашего доверия">
+    <title>персона-1</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
+        <header class="z-10 w-full transition-colors">
+            <span class="absolute top-7 left-7 sm:hidden">ЛОГОТИП</span>
+            <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
+                <!-- <img class="h-24" loading="lazy" src="./src/img/logo.jpg" width="228" height="98" alt="лого"> -->
+                <a href="/"><span>ЛОГОТИП</span><a>
+                        <ul class="flex gap-2 flex-wrap text-main-black">
+                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                                    data-goto=".page-section-1">Ссылка 1</a></li>
+                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                                    data-goto=".page-section-2">Ссылка 2</a></li>
+                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                                    data-goto=".page-section-3">Ссылка 3</a></li>
+                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                                    data-goto=".page-section-4">Ссылка 4</a></li>
+                        </ul>
+                        <a class="header-call-button" href="#">Записаться</a>
+            </div>
+
+            <!-- мобильное меню -->
+            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
+                <!-- <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.jpg" width="114" height="48"
+                    alt="лого"> -->
+                <div class="mobile-menu bg-orange">
+                    <span>ЛОГОТИП</span>
+                    <ul class="flex flex-col pb-11 text-main-black pt-4">
+                        <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
+                                href="#" data-goto=".page-section-1">Ссылка 1</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
+                                href="#" data-goto=".page-section-2">Ссылка 2</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
+                                href="#" data-goto=".page-section-3">Ссылка 3</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
+                                href="#" data-goto=".page-section-4">Ссылка 4</a></li>
+                    </ul>
+                    <a class="header-call-button block w-full mx-3" href="#">Записаться</a>
+                </div>
+
+                <button class="btn-close-menu md:hidden absolute top-5 right-5">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="person py-10">
+                <div class="container">
+                    <div class="person__wrapper grid gap-7 md:grid-cols-2 mb-10">
+                        <div>
+                            <img class="w-full max-h-[600px] md:h-full object-contain md:object-cover"
+                                src="./src/img/person/person-1.jpg" alt="персона-1">
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl mb-2">Адвокат Джон Смит</h2>
+                            <p class="text-orange mb-8">генеральный директор</p>
+                            <p class="mb-4">Адвокат Джон Смит начал свою карьеру в 2005 году, после окончания
+                                Гарвардской школы права. Он является основателем и управляющим партнером юридической
+                                фирмы “Smith & Associates”, специализирующейся на корпоративном и коммерческом праве.
+                            </p>
+                            <p class="mb-4">
+                                За время своей карьеры, Джон Смит представлял интересы многих крупных международных
+                                компаний, государственных органов и частных лиц в сложных судебных и арбитражных
+                                разбирательствах. Он успешно защищал интересы клиентов в спорах о нарушении патентных
+                                прав, недобросовестной конкуренции, защите интеллектуальной собственности и договорных
+                                обязательствах.
+                            </p>
+                            <p class="mb-8">
+                                Джон Смит также активно занимается благотворительностью. Он основал и финансировал
+                                несколько программ для детей из малоимущих семей, направленных на улучшение их
+                                образования и профессионального развития. В 2019 году, он был удостоен престижной премии
+                                “Humanitarian of the Year” за свою деятельность в области защиты прав человека и
+                                поддержки нуждающихся.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cases py-10">
+                <div class="container">
+                    <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+                        <li class="p-4 text-center border-2">
+                            <h3 class="text-xl font-semibold mb-5">Дело номер 1</h3>
+                            <p class="text-orange mb-5">Краткое описание</p>
+                            <a class="underline popup-link" href="#popup">Подробнее</a>
+                        </li>
+                        <li class="p-4 text-center border-2">
+                            <h3 class="text-xl font-semibold mb-5">Дело номер 2</h3>
+                            <p class="text-orange mb-5">Краткое описание</p>
+                            <a class="underline popup-link" href="#popup2">Подробнее</a>
+                        </li>
+                        <li class="p-4 text-center border-2">
+                            <h3 class="text-xl font-semibold mb-5">Дело номер 3</h3>
+                            <p class="text-orange mb-5">Краткое описание</p>
+                            <a class="underline popup-link" href="#popup3">Подробнее</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contacts py-10">
+                <div class="container">
+                    <section class="form-section">
+                        <div class="form-wrapper">
+                            <form action="#" id="form" class="form__body validate-form">
+                                <h2 class="form__title">Напишите нам</h2>
+                                <p class="form__sub-title">Когда вы сталкиваетесь с юридической дилеммой, будь то иск о
+                                    телесных повреждениях или уголовное
+                                    обвинение, вашим первым шагом должно стать доверие к знаниям и навыкам нашей
+                                    компании</p>
+
+                                <div class="form-inner">
+                                    <div class="form__item">
+                                        <input id="formName" type="text" name="name" class="form__input _req"
+                                            placeholder="Ваше имя">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <input id="formEmail" type="email" name="email" class="form__input _req"
+                                            placeholder="Ваш email">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <input id="formPhone" type="tel" name="phone" class="form__input _req"
+                                            placeholder="Ваш телефон">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="form__button">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="popup" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                            </svg>
+                        </button>
+                        <h2 class="popup__title">Это описание супер кейса 1"</h2>
+                        <div class="popup__wrapper">
+                            <div class="popup__img">
+                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
+                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
+                                        height="50px">
+                                        <path
+                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="popup__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
+                                commodi,
+                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
+                                excepturi?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="popup2" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                            </svg>
+                        </button>
+                        <h2 class="popup__title">Это описание супер кейса 2"</h2>
+                        <div class="popup__wrapper">
+                            <div class="popup__img">
+                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
+                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
+                                        height="50px">
+                                        <path
+                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="popup__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
+                                commodi,
+                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
+                                excepturi?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="popup3" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                            </svg>
+                        </button>
+                        <h2 class="popup__title">Это описание супер кейса 3"</h2>
+                        <div class="popup__wrapper">
+                            <div class="popup__img">
+                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
+                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
+                                        height="50px">
+                                        <path
+                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="popup__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
+                                commodi,
+                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
+                                excepturi?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-12 bg-orange">
+            <div class="container">
+                footer
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

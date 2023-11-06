@@ -1,0 +1,72 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/swiper.css';
+@import './block/pin-wrap.css';
+@import './block/tabs.css';
+@import './block/form.css';
+@import './block/popup.css';
+
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #f2f2f2;
+        background: #000000;
+        font-weight: 400;
+
+        overflow-x: hidden;
+        max-width: 100vw;
+        width: 100%;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+.header-call-button {
+    @apply py-3 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
+}
+
+.header-call-button:hover {
+    background-color: transparent;
+    color: #5278DA;
+}
+
+.person-button {
+    @apply py-3 px-8 bg-orange rounded-[160px] text-white font-semibold w-44 text-center border-solid border-orange border-[2px] block hover:text-orange hover:bg-transparent transition-all;
+}
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

@@ -1,0 +1,25 @@
+.mobile-menu {
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 0 100px;
+}
+
+.mobile-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.btn-close-menu {
+    z-index: 999;
+    top: 20px !important;
+    right: 40px !important;
+}

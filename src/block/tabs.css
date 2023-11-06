@@ -1,0 +1,21 @@
+/* tabs start */
+@media(max-width: 768px) {
+    ._tabs-block {
+        display: none !important;
+    }
+
+    ._tabs-block._active {
+        display: block !important;
+    }
+
+    ._tabs-item._active {
+        color: #ec6633;
+        text-decoration: underline;
+    }
+}
+
+@media(min-width: 768px) {
+    .program__nav {
+        display: none;
+    }
+}
