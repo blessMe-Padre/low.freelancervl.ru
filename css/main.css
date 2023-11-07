@@ -262,8 +262,7 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-start:var(--swiper-centered-offset-before);
-          margin-inline-start:var(--swiper-centered-offset-before)
+  margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -273,8 +272,7 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-before:var(--swiper-centered-offset-before);
-          margin-block-start:var(--swiper-centered-offset-before)
+  margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1084,7 +1082,7 @@ textarea.form__input {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1829,6 +1827,10 @@ body {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -1867,7 +1869,7 @@ body {
 
 .bg-orange{
   --tw-bg-opacity: 1;
-  background-color: rgb(236 102 51 / var(--tw-bg-opacity));
+  background-color: rgb(250 132 43 / var(--tw-bg-opacity));
 }
 
 .object-contain{
@@ -1939,17 +1941,26 @@ body {
   line-height: 1.75rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 .text-main-black{
-  color: rgba(0, 0, 0, 0.90);
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity));
 }
 
 .text-orange{
   --tw-text-opacity: 1;
-  color: rgb(236 102 51 / var(--tw-text-opacity));
+  color: rgb(250 132 43 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -1969,28 +1980,9 @@ body {
 
 /* Директивы классов */
 
-.header-call-button{
-  display: block;
-  width: 11rem;
-  border-radius: 160px;
-  border-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(82 120 218 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(82 120 218 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
+/* .header-call-button {
+    @apply py-3 px-8 rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
+} */
 
 .header-call-button:hover {
   background-color: transparent;
@@ -2004,9 +1996,9 @@ body {
   border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
-  border-color: rgb(236 102 51 / var(--tw-border-opacity));
+  border-color: rgb(250 132 43 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(236 102 51 / var(--tw-bg-opacity));
+  background-color: rgb(250 132 43 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 2rem;
@@ -2023,7 +2015,7 @@ body {
 .person-button:hover{
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(236 102 51 / var(--tw-text-opacity));
+  color: rgb(250 132 43 / var(--tw-text-opacity));
 }
 
 /* Прочие классы */
@@ -2046,9 +2038,14 @@ body {
   overflow: hidden;
 }
 
+.header-fix {
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
 .hover\:text-orange:hover{
   --tw-text-opacity: 1;
-  color: rgb(236 102 51 / var(--tw-text-opacity));
+  color: rgb(250 132 43 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

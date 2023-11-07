@@ -1,5 +1,9 @@
+import {initStickyHeader} from './sticky-header'
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
+    initStickyHeader()
     console.log('подключен скрипт main.js');
 
     const body = document.querySelector('body');
