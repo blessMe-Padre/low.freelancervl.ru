@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 /* Импорт шрифтов */
 
@@ -262,7 +262,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -272,7 +273,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1080,9 +1082,56 @@ textarea.form__input {
   background-color: red;
 }
 
+a.link {
+  text-decoration: none;
+  transition: 0.3s ease all;
+  color: #FA842B;
+}
+
+a.link:hover,
+a.link:focus {
+  color: #FFF;
+}
+
+.link {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 0px;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #FA842B;
+  z-index: 2;
+  padding: 10px 25px;
+}
+
+.link:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #FA842B;
+  z-index: -1;
+}
+
+.link:hover:before,
+.link:focus:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1517,7 +1566,7 @@ video {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #f2f2f2;
   background: #000000;
   font-weight: 400;
@@ -1674,6 +1723,14 @@ body {
   position: relative;
 }
 
+.-right-72{
+  right: -18rem;
+}
+
+.-top-28{
+  top: -7rem;
+}
+
 .left-5{
   left: 1.25rem;
 }
@@ -1711,12 +1768,20 @@ body {
   margin-right: 0.75rem;
 }
 
+.-ml-16{
+  margin-left: -4rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-3{
@@ -1749,6 +1814,11 @@ body {
 
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+
 }
 
 .mt-8{
@@ -1928,6 +1998,16 @@ body {
   padding-bottom: 3rem;
 }
 
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-11{
   padding-bottom: 2.75rem;
 }
@@ -1948,6 +2028,10 @@ body {
   text-align: center;
 }
 
+.font-droidFontRegular{
+  font-family: droid-regular, regular;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1960,6 +2044,11 @@ body {
 
 .text-5xl{
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1981,6 +2070,21 @@ body {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2028,6 +2132,32 @@ body {
   transition-duration: 150ms;
 }
 
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+
+@font-face {
+  font-family: 'droid-regular';
+
+  src: url('../src/fonts/DroidSerif-Regular.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'droid-bold';
+
+  src: url('../src/fonts/DroidSerif-Bold.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 /* Директивы классов */
 
 /* .header-call-button {
@@ -2037,35 +2167,6 @@ body {
 .header-call-button:hover {
   background-color: transparent;
   color: #5278DA;
-}
-
-.person-button{
-  display: block;
-  width: 11rem;
-  border-radius: 160px;
-  border-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(250 132 43 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 132 43 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.person-button:hover{
-  background-color: transparent;
-  --tw-text-opacity: 1;
-  color: rgb(250 132 43 / var(--tw-text-opacity));
 }
 
 /* Прочие классы */
@@ -2214,6 +2315,14 @@ body {
 }
 
 @media (min-width: 768px){
+  .sm\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:grid{
     display: grid;
   }
@@ -2230,11 +2339,30 @@ body {
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px){
   .md\:order-2{
     order: 2;
+  }
+
+  .md\:-ml-16{
+    margin-left: -4rem;
   }
 
   .md\:flex{
@@ -2283,7 +2411,6 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
 
 @media (min-width: 1280px){
   .lg\:text-3xl{
@@ -2292,3 +2419,4 @@ body {
   }
 }
   
+
