@@ -799,6 +799,21 @@ button.swiper-pagination-bullet{
     .pin-wrap img {
       max-height: 400px;
     }
+
+    .pin-wrap-item {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .pin-wrap-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #FA842B;
+    }
   }
 }
 
@@ -1723,12 +1738,24 @@ body {
   position: relative;
 }
 
+.-bottom-14{
+  bottom: -3.5rem;
+}
+
 .-right-72{
   right: -18rem;
 }
 
 .-top-28{
   top: -7rem;
+}
+
+.-top-36{
+  top: -9rem;
+}
+
+.left-20{
+  left: 5rem;
 }
 
 .left-5{
@@ -1759,18 +1786,6 @@ body {
   top: 1.75rem;
 }
 
-.-top-36{
-  top: -9rem;
-}
-
-.left-20{
-  left: 5rem;
-}
-
-.-bottom-14{
-  bottom: -3.5rem;
-}
-
 .-z-10{
   z-index: -10;
 }
@@ -1790,10 +1805,6 @@ body {
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.-ml-16{
-  margin-left: -4rem;
 }
 
 .mb-10{
@@ -1896,16 +1907,12 @@ body {
   max-width: 48rem;
 }
 
+.max-w-lg{
+  max-width: 32rem;
+}
+
 .flex-auto{
   flex: 1 1 auto;
-}
-
-.flex-shrink-0{
-  flex-shrink: 0;
-}
-
-.flex-grow-0{
-  flex-grow: 0;
 }
 
 .grid-rows-\[auto_1fr_auto\]{
@@ -2075,19 +2082,24 @@ body {
   line-height: 1;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -2098,16 +2110,6 @@ body {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2266,14 +2268,14 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .sm\:text-lg{
@@ -2331,10 +2333,5 @@ body {
   .md\:text-9xl{
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }

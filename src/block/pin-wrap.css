@@ -51,5 +51,20 @@
         .pin-wrap img {
             max-height: 400px;
         }
+
+        .pin-wrap-item {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .pin-wrap-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #FA842B;
+        }
     }
 }
