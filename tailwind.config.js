@@ -33,6 +33,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'logo-pattern': "url('../src/img/logo.svg')",
+      },
+      fontFamily: {
+        'droidFontRegular': ['droid-regular', 'regular'],
+        'droidFontBold': ['droid-bold', 'bold'],
       }
     }
   },
