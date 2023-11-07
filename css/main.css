@@ -1778,10 +1778,6 @@ body {
   top: 1.75rem;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -1841,11 +1837,6 @@ body {
 
 .mt-20{
   margin-top: 5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-
 }
 
 .mt-8{
@@ -2021,11 +2012,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -2058,6 +2044,11 @@ body {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl{
@@ -2284,44 +2275,6 @@ body {
   justify-content: center;
 }
 
-.sertificate {
-  min-width: 0;
-  padding: 180px 0 70px;
-  overflow: hidden;
-}
-
-.sertificate__title {
-  position: relative;
-  z-index: 1;
-}
-
-.sertificate__wrapper {
-  width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-
-.gallery-wrapper {
-  display: flex;
-  gap: 30px;
-}
-
-.sertificate-slide a {
-  display: block;
-}
-
-.sertificate__title {
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  padding-bottom: 30px;
-  line-height: normal;
-  text-transform: uppercase;
-  color: white;
-}
-
 .hover\:text-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(250 132 43 / var(--tw-text-opacity));
@@ -2402,6 +2355,10 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[40\%_41\%\]{
+    grid-template-columns: 40% 41%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2418,6 +2375,13 @@ body {
   .md\:text-9xl{
     font-size: 8rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px){
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
