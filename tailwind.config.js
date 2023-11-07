@@ -22,14 +22,19 @@ module.exports = {
       'default-black': '#000000',
       'orange': '#FA842B',
       'blue-light': '#203D8A',
-      'bg-blue': 'blue'
+      'bg-blue': 'blue',
+      'bg-gray': '#8B8B8B'
     },
 
     container: {
       padding: '20px',
-      center: true
+      center: true,
     },
-    extend: {}
+    extend: {
+      backgroundImage: {
+        'logo-pattern': "url('../src/img/logo.svg')",
+      }
+    }
   },
   plugins: [],
 }
