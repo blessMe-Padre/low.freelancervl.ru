@@ -18,10 +18,11 @@ module.exports = {
       'purple': '#3f3cbb',
       'orange': '#ec6633',
       // ---------------------------------
-      'main-black': 'rgba(0, 0, 0, 0.90)',
+      'main-black': '#202020',
       'default-black': '#000000',
-      'blue': '#5278DA',
+      'orange': '#FA842B',
       'blue-light': '#203D8A',
+      'bg-blue': 'blue'
     },
 
     container: {

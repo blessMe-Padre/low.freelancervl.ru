@@ -39,9 +39,9 @@
 
 /* Директивы классов */
 
-.header-call-button {
-    @apply py-3 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
-}
+/* .header-call-button {
+    @apply py-3 px-8 rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
+} */
 
 .header-call-button:hover {
     background-color: transparent;
@@ -70,3 +70,8 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.header-fix {
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  }
