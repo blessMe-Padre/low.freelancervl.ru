@@ -1,11 +1,12 @@
-import {initStickyHeader} from './sticky-header'
-import {initItemSliders} from './item-sliders'
-
+import { iniStickyHeader } from './modules/sticky-header.js';
+import { initSertificateSlider } from './modules/item-sliders.js';
+import { cookieConsentChecker } from './modules/cookie-consent-checker.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    initStickyHeader()
-    initItemSliders()
+    iniStickyHeader();
+    initSertificateSlider();
+    cookieConsentChecker();
     console.log('подключен скрипт main.js');
 
     const body = document.querySelector('body');

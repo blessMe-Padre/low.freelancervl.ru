@@ -10,6 +10,7 @@
 @import './block/form.css';
 @import './block/popup.css';
 @import './block/link.css';
+@import './block/cookies.css';
 
 
 /* Импорт TailWind */
@@ -120,12 +121,15 @@
     .hero__bg {
         position: absolute;
     }
+
     .hero__title {
         font-size: 24px
     }
+
     .hero__text {
         font-size: 14px;
     }
+
     .person__img {
         width: 120px;
     }
@@ -138,23 +142,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 60px;
-  }
-  
+}
 
-  @media (max-width: 1023px) {
+
+@media (max-width: 1023px) {
     .list__list {
-      justify-content: center;
-      gap: 40px;
+        justify-content: center;
+        gap: 40px;
     }
-  
+
     .item__list {
-      width: 190px;
-      height: 190px;
+        width: 190px;
+        height: 190px;
     }
-  }
+}
 
 
-  .item__list {
+.item__list {
     width: 240px;
     height: 240px;
     background-image: url('../src/img/marketing/ellipse.png');
@@ -164,5 +168,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
+}
