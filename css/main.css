@@ -262,8 +262,7 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-start:var(--swiper-centered-offset-before);
-          margin-inline-start:var(--swiper-centered-offset-before)
+  margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -273,8 +272,7 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-before:var(--swiper-centered-offset-before);
-          margin-block-start:var(--swiper-centered-offset-before)
+  margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1131,7 +1129,7 @@ a.link:focus {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1723,12 +1721,24 @@ body {
   position: relative;
 }
 
+.-bottom-14{
+  bottom: -3.5rem;
+}
+
 .-right-72{
   right: -18rem;
 }
 
 .-top-28{
   top: -7rem;
+}
+
+.-top-36{
+  top: -9rem;
+}
+
+.left-20{
+  left: 5rem;
 }
 
 .left-5{
@@ -1766,10 +1776,6 @@ body {
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.-ml-16{
-  margin-left: -4rem;
 }
 
 .mb-10{
@@ -1814,11 +1820,6 @@ body {
 
 .mt-20{
   margin-top: 5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-
 }
 
 .mt-8{
@@ -1998,11 +1999,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -2047,14 +2043,14 @@ body {
   line-height: 1;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg{
@@ -2075,16 +2071,6 @@ body {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2271,44 +2257,6 @@ body {
   justify-content: center;
 }
 
-.sertificate {
-  min-width: 0;
-  padding: 180px 0 70px;
-  overflow: hidden;
-}
-
-.sertificate__title {
-  position: relative;
-  z-index: 1;
-}
-
-.sertificate__wrapper {
-  width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-
-.gallery-wrapper {
-  display: flex;
-  gap: 30px;
-}
-
-.sertificate-slide a {
-  display: block;
-}
-
-.sertificate__title {
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  padding-bottom: 30px;
-  line-height: normal;
-  text-transform: uppercase;
-  color: white;
-}
-
 .hover\:text-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(250 132 43 / var(--tw-text-opacity));
@@ -2340,14 +2288,14 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .sm\:text-lg{
@@ -2389,6 +2337,10 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[40\%_41\%\]{
+    grid-template-columns: 40% 41%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2411,6 +2363,7 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+}
 
 @media (min-width: 1280px){
   .lg\:text-3xl{
@@ -2418,5 +2371,4 @@ body {
     line-height: 2.25rem;
   }
 }
-  
 
