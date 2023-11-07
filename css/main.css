@@ -797,6 +797,21 @@ button.swiper-pagination-bullet{
     .pin-wrap img {
       max-height: 400px;
     }
+
+    .pin-wrap-item {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .pin-wrap-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #FA842B;
+    }
   }
 }
 
@@ -1878,16 +1893,12 @@ body {
   max-width: 48rem;
 }
 
+.max-w-lg{
+  max-width: 32rem;
+}
+
 .flex-auto{
   flex: 1 1 auto;
-}
-
-.flex-shrink-0{
-  flex-shrink: 0;
-}
-
-.flex-grow-0{
-  flex-grow: 0;
 }
 
 .grid-rows-\[auto_1fr_auto\]{
@@ -2031,6 +2042,11 @@ body {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl{
@@ -2357,11 +2373,6 @@ body {
   .md\:text-9xl{
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
