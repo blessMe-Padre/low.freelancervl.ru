@@ -94,3 +94,103 @@
     background-repeat: repeat;
     opacity: .6;
 }
+
+
+.hero__bg {
+    position: absolute;
+    /* top: 40; */
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+
+}
+
+@media (max-width:767px) {
+    .hero__bg {
+        position: absolute;
+    }
+    .hero__title {
+        font-size: 24px
+    }
+    .hero__text {
+        font-size: 14px;
+    }
+    .person__img {
+        width: 120px;
+    }
+}
+
+.marketing__list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  
+
+  @media (max-width: 1023px) {
+    .list__list {
+      justify-content: center;
+      gap: 40px;
+    }
+  
+    .item__list {
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+
+  .item__list {
+    width: 240px;
+    height: 240px;
+    background-image: url('../src/img/marketing/ellipse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+.sertificate {
+    min-width: 0;
+    padding: 180px 0 70px;
+    overflow: hidden;
+  }
+  
+  .sertificate__title {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sertificate__wrapper {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+  
+  .gallery-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .sertificate-slide a {
+    display: block;
+  }
+  
+  .sertificate__title {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 30px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+  }
+  

@@ -1,9 +1,11 @@
 import {initStickyHeader} from './sticky-header'
+import {initItemSliders} from './item-sliders'
 
 
 
 window.addEventListener('DOMContentLoaded', () => {
     initStickyHeader()
+    initItemSliders()
     console.log('подключен скрипт main.js');
 
     const body = document.querySelector('body');
