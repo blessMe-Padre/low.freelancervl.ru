@@ -11,6 +11,8 @@
 @import './block/popup.css';
 @import './block/link.css';
 @import './block/cookies.css';
+@import './block/contacts.css';
+@import './block/footer.css';
 
 
 /* Импорт TailWind */

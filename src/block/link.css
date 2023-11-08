@@ -1,29 +1,29 @@
-a.link {
-    text-decoration: none;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s ease all;
-    color: #FA842B;
-}
-
-a.link:hover,
-a.link:focus {
-    color: #FFF;
-}
-
 .link {
+    height: 62px;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    padding: 14px 0px;
+    padding: 20px 25px;
     border-radius: 2px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid #FA842B;
     z-index: 2;
-    padding: 10px 25px;
+
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s ease all;
+    color: #FA842B;
+    background-image: url('../src/img/link-before.svg'), url('../src/img/link-after.svg') !important;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+.link:hover,
+.link:focus {
+    color: #ffffff;
 }
 
 .link:before {

@@ -174,15 +174,16 @@
 
             <section class="contacts py-10">
                 <div class="container">
-                    <section class="form-section">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__descriptions">
+                            <h2 class="contacts__title">Свяжитесь с нами для <span>бесплатной</span> оценки дела</h2>
+                            <p class="contacts__text">Когда вы сталкиваетесь с юридической дилеммой, будь то иск
+                                о телесных повреждениях или уголовное обвинение, вашим первым шагом должно стать доверие
+                                к знаниям и навыкам нашей компании</p>
+                        </div>
+
                         <div class="form-wrapper">
                             <form action="#" id="form" class="form__body validate-form">
-                                <h2 class="form__title">Напишите нам</h2>
-                                <p class="form__sub-title">Когда вы сталкиваетесь с юридической дилеммой, будь то иск о
-                                    телесных повреждениях или уголовное
-                                    обвинение, вашим первым шагом должно стать доверие к знаниям и навыкам нашей
-                                    компании</p>
-
                                 <div class="form-inner">
                                     <div class="form__item">
                                         <input id="formName" type="text" name="name" class="form__input _req"
@@ -200,14 +201,16 @@
                                     </div>
 
                                     <div class="form__item">
-                                        <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                                        <textarea name="message" id="formMessage" class="form__input _req"
+                                            placeholder="Опишите проблему"></textarea>
                                     </div>
 
-                                    <button type="submit" class="form__button">Оставить заявку</button>
+                                    <button type="submit" class="link">Оставить заявку</button>
                                 </div>
                             </form>
                         </div>
-                    </section>
+                    </div>
+                    <!-- /container -->
                 </div>
             </section>
 
@@ -246,10 +249,11 @@
                             </div>
                             <div class="popup__img relative">
                                 <img src="./src/img/person/case-img.png" width="419" height="549" alt="кейс">
-                                <img class="absolute top-0 left-0" src="./src/img/person/mask.webp" width="419"
+                                <img class="absolute top-0 left-0 w-full" src="./src/img/person/mask.webp" width="419"
                                     height="549">
-                                <img class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
-                                    src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
+                                <img class="absolute top-2/4 left-2/4 sm:top-1/4 -translate-y-2/4 -translate-x-2/4
+                                  sm:top-1/4  md:top-2/4
+                                " src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
                                 <div>
                                     <a class="link block" href="src/case-1.pdf" target="_blank"
                                         rel="noopener noreferrer">Смотреть
@@ -264,9 +268,30 @@
 
         </main>
 
-        <footer class="py-12 bg-orange">
+        <footer class="footer py-10">
             <div class="container">
-                footer
+                <div class="footer__wrapper flex flex-wrap justify-between gap-5">
+                    <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
+                    <address>
+                        г. Владивосток <br>
+                        ул. Светланская 10<br>
+                        <a class="text-orange mt-4 block" href="#" target="_blank" rel="noopener noreferrer">Посмотреть
+                            на
+                            карте</a>
+                    </address>
+
+                    <ul>
+                        <li>ИНН 1101174277</li>
+                        <li>ОГРН 1221100002540</li>
+                    </ul>
+
+                    <div>
+                        <p class="mb-5">Позвоните нам для получения
+                            <span class="text-orange block">бесплатной консультации</span>
+                        </p>
+                        <a href="tel:+79021253645">7 (902) 125-36-45</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
