@@ -29,6 +29,7 @@
 }
 
 .person-cases li {
+    position: relative;
     background: rgba(67, 67, 67, 0.50);
     backdrop-filter: blur(2.5px);
     padding: 50px;
@@ -38,8 +39,28 @@
     align-items: center;
 }
 
+.person-cases li::before,
+.person-cases li::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: #FA842B;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.person-cases li::before {
+    top: 0;
+}
+
+.person-cases li::after {
+    bottom: 0;
+}
+
 .person-cases li a {
     transition: color 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .person-cases li a:hover {
