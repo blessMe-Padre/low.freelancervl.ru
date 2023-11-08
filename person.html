@@ -12,12 +12,25 @@
 </head>
 
 <body>
+    <!--[if lt IE 10]>
+        <div id="old-browser">
+            <div class="info">Вы используете устаревшую версию браузера. <br> Обновите
+                Ваш браузер или установите нормальный и современный<br>
+                <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a><br>
+                <a href="https://www.mozilla.org/ru/firefox/new/">Mozilla Firefox</a><br>
+                <a href="http://www.opera.com/ru/computer/windows">Opera</a><br>
+                для лучшего отображения данного сайта.
+            </div>
+        </div>
+    <![endif]-->
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
         <header class="z-10 w-full transition-colors">
             <span class="absolute top-7 left-7 sm:hidden">ЛОГОТИП</span>
             <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
                 <!-- <img class="h-24" loading="lazy" src="./src/img/logo.jpg" width="228" height="98" alt="лого"> -->
-                <a href="/"><span>ЛОГОТИП</span><a>
+                <a href="/"><span>
+                    <img src="./src/img/logo.png" alt="logo" />
+                </span><a>
                         <ul class="flex gap-2 flex-wrap text-main-black">
                             <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
                                     data-goto=".page-section-1">Ссылка 1</a></li>
@@ -63,74 +76,117 @@
         </header>
 
         <main>
-            <section class="person py-10">
+            <section class="person py-10 pt-12 relative">
+                <img class="sm:absolute -z-10" width="1550" height="750" src="./src/img/person/person-hero.webp"
+                    alt="персона-1">
                 <div class="container">
-                    <div class="person__wrapper grid gap-7 md:grid-cols-2 mb-10">
-                        <div>
-                            <img class="w-full max-h-[600px] md:h-full object-contain md:object-cover"
-                                src="./src/img/person/person-1.jpg" alt="персона-1">
-                        </div>
-
-                        <div>
-                            <h2 class="text-2xl mb-2">Адвокат Джон Смит</h2>
-                            <p class="text-orange mb-8">генеральный директор</p>
-                            <p class="mb-4">Адвокат Джон Смит начал свою карьеру в 2005 году, после окончания
-                                Гарвардской школы права. Он является основателем и управляющим партнером юридической
-                                фирмы “Smith & Associates”, специализирующейся на корпоративном и коммерческом праве.
-                            </p>
-                            <p class="mb-4">
-                                За время своей карьеры, Джон Смит представлял интересы многих крупных международных
-                                компаний, государственных органов и частных лиц в сложных судебных и арбитражных
-                                разбирательствах. Он успешно защищал интересы клиентов в спорах о нарушении патентных
-                                прав, недобросовестной конкуренции, защите интеллектуальной собственности и договорных
-                                обязательствах.
-                            </p>
-                            <p class="mb-8">
-                                Джон Смит также активно занимается благотворительностью. Он основал и финансировал
-                                несколько программ для детей из малоимущих семей, направленных на улучшение их
-                                образования и профессионального развития. В 2019 году, он был удостоен престижной премии
-                                “Humanitarian of the Year” за свою деятельность в области защиты прав человека и
-                                поддержки нуждающихся.</p>
-
-
+                    <div class="mb-10 max-w-[775px] ml-auto">
+                        <h2
+                            class="text-2xl sm:text-6xl font-droidFontRegular font-bold mb-5 sm:mb-10 uppercase sm:mt-40">
+                            Дмитрий
+                            Соколов</h2>
+                        <p class="text-orange text-sm sm:text-2xl mb-5 sm:mb-10 uppercase">Имеет статус адвоката</p>
+                        <p class="text-xs sm:text-lg mb-10">Является юристом с опытом более 17 лет. Работал
+                            начальником
+                            юридического
+                            подразделения в коллекторском агентстве и крупного строительного холдинга.
+                            Специализируется на банкротстве физических и юридических лиц, арбитражных делах,
+                            брачно-семейных делах и при разделе имущества супругов. Также занимается регистрацией
+                            товарных знаков для бизнеса. Имеет большой опыт по юридическому сопровождению
+                            организаций, по регистрации и ликвидации компаний и по разрешению корпоративных
+                            вопросов.
+                        </p>
+                        <div class="flex flex-wrap gap-5 items-center">
+                            <a href="#" class="link">Записаться на консультацию</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="cases py-10">
+            <section class="person-cases py-16  sm:py-24">
                 <div class="container">
-                    <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-                        <li class="p-4 text-center border-2">
-                            <h3 class="text-xl font-semibold mb-5">Дело номер 1</h3>
-                            <p class="text-orange mb-5">Краткое описание</p>
-                            <a class="underline popup-link" href="#popup">Подробнее</a>
-                        </li>
-                        <li class="p-4 text-center border-2">
-                            <h3 class="text-xl font-semibold mb-5">Дело номер 2</h3>
-                            <p class="text-orange mb-5">Краткое описание</p>
-                            <a class="underline popup-link" href="#popup2">Подробнее</a>
-                        </li>
-                        <li class="p-4 text-center border-2">
-                            <h3 class="text-xl font-semibold mb-5">Дело номер 3</h3>
-                            <p class="text-orange mb-5">Краткое описание</p>
-                            <a class="underline popup-link" href="#popup3">Подробнее</a>
-                        </li>
-                    </ul>
+                    <h2 class="text-2xl sm:text-7xl uppercase font-droidFontRegular font-bold mb-5 sm:mb-10">Результаты
+                        рассмотрения
+                        дела</h2>
+
+                    <div class="_tabs">
+                        <nav class="flex gap-5 mb-8">
+                            <button class="_tabs-item is-active" data-tab="#tab1">Уголовные дела</button>
+                            <button class="_tabs-item" data-tab="#tab2">Административные дела</button>
+                        </nav>
+
+                        <div class="_tabs-block is-active" id="tab1">
+                            <ul>
+                                <li class="p-4 text-center">
+                                    <img class="mb-5 sm:mb-10" src="./src/img/person/case-icons.svg" width="70"
+                                        height="70" alt="icon">
+                                    <h3 class="text-sm sm:text-xl font-semibold mb-5 sm:mb-10 uppercase">Мужчине
+                                        сократили Срок
+                                        дисквалификации После
+                                        Нескольких обвинений в ДВИ</h3>
+                                    <a class="underline popup-link" href="#popup">Смотреть дело</a>
+                                </li>
+                                <li class="p-4 text-center">
+                                    <img class="mb-5 sm:mb-10" src="./src/img/person/case-icons.svg" width="70"
+                                        height="70" alt="icon">
+                                    <h3 class="text-sm sm:text-xl font-semibold mb-5 sm:mb-10 uppercase">Мужчине
+                                        сократили Срок
+                                        дисквалификации После
+                                        Нескольких обвинений в ДВИ</h3>
+                                    <a class="underline popup-link" href="#popup">Смотреть дело</a>
+                                </li>
+                                <li class="p-4 text-center">
+                                    <img class="mb-5 sm:mb-10" src="./src/img/person/case-icons.svg" width="70"
+                                        height="70" alt="icon">
+                                    <h3 class="text-sm sm:text-xl font-semibold mb-5 sm:mb-10 uppercase">Мужчине
+                                        сократили Срок
+                                        дисквалификации После
+                                        Нескольких обвинений в ДВИ</h3>
+                                    <a class="underline popup-link" href="#popup">Смотреть дело</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="_tabs-block" id="tab2">
+                            <ul>
+                                <li class="p-4 text-center">
+                                    <img class="mb-5 sm:mb-10" src="./src/img/person/case-icons.svg" width="70"
+                                        height="70" alt="icon">
+                                    <h3 class="text-sm sm:text-xl font-semibold mb-5 sm:mb-10 uppercase">Мужчине
+                                        сократили Срок
+                                        дисквалификации После
+                                        Нескольких обвинений в ДВИ</h3>
+                                    <a class="underline popup-link" href="#popup">Смотреть дело</a>
+                                </li>
+                                <li class="p-4 text-center">
+                                    <img class="mb-5 sm:mb-10" src="./src/img/person/case-icons.svg" width="70"
+                                        height="70" alt="icon">
+                                    <h3 class="text-sm sm:text-xl font-semibold mb-5 sm:mb-10 uppercase">Мужчине
+                                        сократили Срок
+                                        дисквалификации После
+                                        Нескольких обвинений в ДВИ</h3>
+                                    <a class="underline popup-link" href="#popup">Смотреть дело</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <section class="contacts py-10">
+            <section class="contacts py-10 relative">
+                <img class="absolute top-0 left-0 w-full h-full object-cover -z-10" src="./src/img/form-bg.webp">
                 <div class="container">
-                    <section class="form-section">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__descriptions">
+                            <h2 class="contacts__title">Свяжитесь с нами для <span>бесплатной</span> оценки дела</h2>
+                            <p class="contacts__text">Когда вы сталкиваетесь с юридической дилеммой, будь то иск
+                                о телесных повреждениях или уголовное обвинение, вашим первым шагом должно стать доверие
+                                к знаниям и навыкам нашей компании</p>
+                        </div>
+
                         <div class="form-wrapper">
                             <form action="#" id="form" class="form__body validate-form">
-                                <h2 class="form__title">Напишите нам</h2>
-                                <p class="form__sub-title">Когда вы сталкиваетесь с юридической дилеммой, будь то иск о
-                                    телесных повреждениях или уголовное
-                                    обвинение, вашим первым шагом должно стать доверие к знаниям и навыкам нашей
-                                    компании</p>
-
                                 <div class="form-inner">
                                     <div class="form__item">
                                         <input id="formName" type="text" name="name" class="form__input _req"
@@ -148,14 +204,16 @@
                                     </div>
 
                                     <div class="form__item">
-                                        <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                                        <textarea name="message" id="formMessage" class="form__input _req"
+                                            placeholder="Опишите проблему"></textarea>
                                     </div>
 
-                                    <button type="submit" class="form__button">Оставить заявку</button>
+                                    <button type="submit" class="link">Оставить заявку</button>
                                 </div>
                             </form>
                         </div>
-                    </section>
+                    </div>
+                    <!-- /container -->
                 </div>
             </section>
 
@@ -164,117 +222,93 @@
                     <div class="popup__content">
                         <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
                             <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
-                                <path
+                                <path style="fill: #ffffff;"
                                     d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
                                 </path>
                             </svg>
                         </button>
-                        <h2 class="popup__title">Это описание супер кейса 1"</h2>
                         <div class="popup__wrapper">
-                            <div class="popup__img">
-                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
-                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
-                                        height="50px">
-                                        <path
-                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
-                            </div>
                             <div class="popup__description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
-                                commodi,
-                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
-                                excepturi?
+                                <h2 class="popup__title">Мужчине сократили Срок дисквалификации После Нескольких
+                                    обвинений в ДВИ</h2>
+                                <p class="mb-5">Наша команда высококвалифицированных адвокатов по уголовным делам
+                                    недавно оказала
+                                    помощь мужчине, обвиняемому в незаконном проникновении на частную территорию. Это
+                                    создало очень сложное юридическое положение для мужчины, который хотел избежать
+                                    серьезных последствий уголовного осуждения, включая возможный срок тюремного
+                                    заключения, штрафы и отметку о постоянной судимости.</p>
+                                <p class="mb-5">Мы быстро приступаем к работе, чтобы добиться наилучшего результата для
+                                    нашего
+                                    клиента. Это побудило нас обсудить детали дела со всеми вовлеченными сторонами, где
+                                    мы использовали наш обширный опыт, чтобы успешно договориться о полном снятии
+                                    обвинений в нападении и незаконном проникновении на чужую территорию.</p>
+                                <p class="mb-5">Хотя это стало огромным облегчением для клиента, наши юристы пошли еще
+                                    дальше и
+                                    воспользовались измененным правовым статутом, который позволил нам немедленно подать
+                                    заявление об исключении. Это удалило инцидент из досье нашего клиента, и, выбрав
+                                    такого компетентного юридического представителя, который был в курсе последних
+                                    юридических тенденций, наш клиент смог возобновить свою жизнь без каких-либо
+                                    существенных последствий.</p>
+                            </div>
+                            <div class="popup__img relative">
+                                <img src="./src/img/person/case-img.png" width="419" height="549" alt="кейс">
+                                <img class="absolute top-0 left-0 w-full" src="./src/img/person/mask.webp" width="419"
+                                    height="549">
+                                <img class="absolute top-2/4 left-2/4 sm:top-1/4 -translate-y-2/4 -translate-x-2/4
+                                  sm:top-1/4  md:top-2/4
+                                " src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
+                                <div>
+                                    <a class="link block" href="src/case-1.pdf" target="_blank"
+                                        rel="noopener noreferrer">Смотреть
+                                        дело
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="popup2" class="popup">
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
-                            <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                </path>
-                            </svg>
-                        </button>
-                        <h2 class="popup__title">Это описание супер кейса 2"</h2>
-                        <div class="popup__wrapper">
-                            <div class="popup__img">
-                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
-                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
-                                        height="50px">
-                                        <path
-                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="popup__description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
-                                commodi,
-                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
-                                excepturi?
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="popup3" class="popup">
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
-                            <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                </path>
-                            </svg>
-                        </button>
-                        <h2 class="popup__title">Это описание супер кейса 3"</h2>
-                        <div class="popup__wrapper">
-                            <div class="popup__img">
-                                <img src="./src/img/case/case-img-1.jpg" alt="кейс">
-                                <a class="popup__img-link" href="src/case-1.pdf" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
-                                        height="50px">
-                                        <path
-                                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="popup__description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto dignissimos
-                                commodi,
-                                quae praesentium similique accusantium incidunt, nisi ex possimus placeat magni
-                                excepturi?
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <footer class="py-12 bg-orange">
+        <footer class="footer py-10">
             <div class="container">
-                footer
+                <div class="footer__wrapper flex flex-wrap justify-between gap-5">
+                    <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
+                    <address>
+                        г. Владивосток <br>
+                        ул. Светланская 10<br>
+                        <a class="text-orange mt-4 block" href="#" target="_blank" rel="noopener noreferrer">Посмотреть
+                            на
+                            карте</a>
+                    </address>
+
+                    <ul>
+                        <li>ИНН 1101174277</li>
+                        <li>ОГРН 1221100002540</li>
+                    </ul>
+
+                    <div>
+                        <p class="mb-5">Позвоните нам для получения
+                            <span class="text-orange block">бесплатной консультации</span>
+                        </p>
+                        <a href="tel:+79021253645">7 (902) 125-36-45</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
 
+    <section class="component-demo" data-tabs="element">
+        <div class="cookies" data-cookies="data-cookies" data-cookies-duration="30">
+            <div class="cookies__text"><span>Мы используем куки</span></div>
+            <button class="cookies__btn" type="button" data-cookies-consent="data-cookies-consent">OK</button>
+        </div>
+    </section>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,14 @@
-import {initStickyHeader} from './sticky-header'
-import {initItemSliders} from './item-sliders'
-
+import { iniStickyHeader } from './modules/sticky-header.js';
+import { initSertificateSlider } from './modules/item-sliders.js';
+import { cookieConsentChecker } from './modules/cookie-consent-checker.js';
+import { initServiceSlider} from './modules/servicesSlider.js'
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    initStickyHeader()
-    initItemSliders()
+    iniStickyHeader();
+    initSertificateSlider();
+    cookieConsentChecker();
+    initServiceSlider();
     console.log('подключен скрипт main.js');
 
     const body = document.querySelector('body');
@@ -20,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
         menuButton.classList.toggle('active');
         mobileMenu.classList.toggle('is-active');
         body.classList.toggle('lock');
+        console.log('клик')
     });
 
     mobileMenuLinks.forEach(link => {
@@ -42,19 +46,17 @@ window.addEventListener('DOMContentLoaded', () => {
             const targetBtnId = targetBtn.getAttribute('data-tab');
             const currentTab = document.querySelector(targetBtnId);
 
-            if (!targetBtn.classList.contains('_active')) {
+            if (!targetBtn.classList.contains('is-active')) {
                 tabButtons.forEach(button => {
-                    button.classList.remove('_active');
                     button.classList.remove('is-active');
                 });
 
                 tabs_blocks.forEach(button => {
-                    button.classList.remove('_active');
+                    button.classList.remove('is-active');
                 });
 
-                targetBtn.classList.add('_active');
                 targetBtn.classList.add('is-active');
-                currentTab.classList.add('_active');
+                currentTab.classList.add('is-active');
             }
         });
     });

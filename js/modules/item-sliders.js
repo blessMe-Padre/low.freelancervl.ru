@@ -4,7 +4,6 @@ export const initSertificateSlider = () => {
 
     if (exclusiveSlider) {
         const sliderItems = document.querySelectorAll('.sertificate-slide');
-        console.log(window.innerWidth)
         if (window.innerWidth < 1023) {
             console.log('f')
             sliderItems.forEach((slide) => {

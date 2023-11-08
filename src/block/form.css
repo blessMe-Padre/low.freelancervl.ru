@@ -35,10 +35,6 @@
     margin: 0px 0px 30px 0px;
 }
 
-.form__item {
-    margin: 0px 0px 20px 0px;
-}
-
 .form__label {
     font-size: 18px;
     display: block;
@@ -109,8 +105,8 @@ textarea.form__input {
 }
 
 .form__item {
+    width: 100%;
     margin-bottom: 25px;
-    margin-right: 30px;
 }
 
 .form__input {
@@ -133,8 +129,9 @@ textarea.form__input {
 }
 
 .form__input {
-    background-color: #fff;
-    color: black;
+    background: rgba(38, 38, 38, 0.60);
+    backdrop-filter: blur(15px);
+    color: #ffffff;
     border-color: transparent;
 }
 
