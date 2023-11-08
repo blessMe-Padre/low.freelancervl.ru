@@ -201,7 +201,8 @@
                                     </div>
 
                                     <div class="form__item">
-                                        <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                                        <textarea name="message" id="formMessage" class="form__input _req"
+                                            placeholder="Опишите проблему"></textarea>
                                     </div>
 
                                     <button type="submit" class="link">Оставить заявку</button>
@@ -248,10 +249,11 @@
                             </div>
                             <div class="popup__img relative">
                                 <img src="./src/img/person/case-img.png" width="419" height="549" alt="кейс">
-                                <img class="absolute top-0 left-0" src="./src/img/person/mask.webp" width="419"
+                                <img class="absolute top-0 left-0 w-full" src="./src/img/person/mask.webp" width="419"
                                     height="549">
-                                <img class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
-                                    src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
+                                <img class="absolute top-2/4 left-2/4 sm:top-1/4 -translate-y-2/4 -translate-x-2/4
+                                  sm:top-1/4  md:top-2/4
+                                " src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
                                 <div>
                                     <a class="link block" href="src/case-1.pdf" target="_blank"
                                         rel="noopener noreferrer">Смотреть
@@ -266,9 +268,30 @@
 
         </main>
 
-        <footer class="py-12 bg-orange">
+        <footer class="footer py-10">
             <div class="container">
-                footer
+                <div class="footer__wrapper flex flex-wrap justify-between gap-5">
+                    <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
+                    <address>
+                        г. Владивосток <br>
+                        ул. Светланская 10<br>
+                        <a class="text-orange mt-4 block" href="#" target="_blank" rel="noopener noreferrer">Посмотреть
+                            на
+                            карте</a>
+                    </address>
+
+                    <ul>
+                        <li>ИНН 1101174277</li>
+                        <li>ОГРН 1221100002540</li>
+                    </ul>
+
+                    <div>
+                        <p class="mb-5">Позвоните нам для получения
+                            <span class="text-orange block">бесплатной консультации</span>
+                        </p>
+                        <a href="tel:+79021253645">7 (902) 125-36-45</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

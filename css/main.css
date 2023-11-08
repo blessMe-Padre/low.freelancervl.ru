@@ -1163,31 +1163,37 @@ textarea.form__input {
   background-color: red;
 }
 
-a.link {
-  text-decoration: none;
-  transition: 0.3s ease all;
-  color: #FA842B;
-}
-
-a.link:hover,
-a.link:focus {
-  color: #FFF;
+@media(max-width: 767px) {
+  .popup__wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .link {
+  height: 62px;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
   font-weight: bold;
-  padding: 14px 0px;
+  padding: 20px 25px;
   border-radius: 2px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #FA842B;
   z-index: 2;
-  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  color: #FA842B;
+  background-image: url('../src/img/link-before.svg'), url('../src/img/link-after.svg') !important;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+}
+
+.link:hover,
+.link:focus {
+  color: #ffffff;
 }
 
 .link:before {
@@ -1295,6 +1301,17 @@ a.link:focus {
   .contacts__text {
     font-size: 12px;
   }
+}
+
+.footer {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+address {
+  font-style: normal;
 }
 
 /* Импорт TailWind */
@@ -1911,10 +1928,6 @@ body {
   left: 0px;
 }
 
-.left-2\/4{
-  left: 50%;
-}
-
 .left-20{
   left: 5rem;
 }
@@ -1945,6 +1958,10 @@ body {
 
 .top-7{
   top: 1.75rem;
+}
+
+.left-2\/4{
+  left: 50%;
 }
 
 .-z-10{
@@ -2016,6 +2033,10 @@ body {
   margin-top: 5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
@@ -2042,6 +2063,10 @@ body {
 
 .h-80{
   height: 20rem;
+}
+
+.h-\[70px\]{
+  height: 70px;
 }
 
 .h-full{
@@ -2485,6 +2510,14 @@ body {
     position: absolute;
   }
 
+  .sm\:left-1\/4{
+    left: 25%;
+  }
+
+  .sm\:top-1\/4{
+    top: 25%;
+  }
+
   .sm\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -2546,6 +2579,10 @@ body {
 }
 
 @media (min-width: 1024px){
+  .md\:top-2\/4{
+    top: 50%;
+  }
+
   .md\:order-2{
     order: 2;
   }
