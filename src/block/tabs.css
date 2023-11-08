@@ -1,21 +1,53 @@
 /* tabs start */
-@media(max-width: 768px) {
-    ._tabs-block {
-        display: none !important;
-    }
-
-    ._tabs-block._active {
-        display: block !important;
-    }
-
-    ._tabs-item._active {
-        color: #ec6633;
-        text-decoration: underline;
-    }
+._tabs-block {
+    display: none;
 }
 
-@media(min-width: 768px) {
-    .program__nav {
-        display: none;
+._tabs-block.is-active {
+    display: block;
+}
+
+.person-cases button {
+    color: #747474;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.person-cases button.is-active {
+    color: #FA842B;
+}
+
+.person-cases ul {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.person-cases li {
+    background: rgba(67, 67, 67, 0.50);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-cases li a {
+    transition: color 0.3s ease;
+}
+
+.person-cases li a:hover {
+    color: #FA842B;
+}
+
+@media (max-width: 767px) {
+    .person-cases button {
+        font-size: 16px;
     }
 }
