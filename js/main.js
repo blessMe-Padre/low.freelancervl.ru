@@ -43,19 +43,17 @@ window.addEventListener('DOMContentLoaded', () => {
             const targetBtnId = targetBtn.getAttribute('data-tab');
             const currentTab = document.querySelector(targetBtnId);
 
-            if (!targetBtn.classList.contains('_active')) {
+            if (!targetBtn.classList.contains('is-active')) {
                 tabButtons.forEach(button => {
-                    button.classList.remove('_active');
                     button.classList.remove('is-active');
                 });
 
                 tabs_blocks.forEach(button => {
-                    button.classList.remove('_active');
+                    button.classList.remove('is-active');
                 });
 
-                targetBtn.classList.add('_active');
                 targetBtn.classList.add('is-active');
-                currentTab.classList.add('_active');
+                currentTab.classList.add('is-active');
             }
         });
     });
