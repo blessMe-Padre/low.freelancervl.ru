@@ -262,8 +262,7 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-start:var(--swiper-centered-offset-before);
-          margin-inline-start:var(--swiper-centered-offset-before)
+  margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -273,8 +272,7 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-before:var(--swiper-centered-offset-before);
-          margin-block-start:var(--swiper-centered-offset-before)
+  margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1316,7 +1314,7 @@ address {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1924,8 +1922,16 @@ body {
   top: -9rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-0{
   left: 0px;
+}
+
+.left-2\/4{
+  left: 50%;
 }
 
 .left-20{
@@ -1938,6 +1944,10 @@ body {
 
 .left-7{
   left: 1.75rem;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .right-5{
@@ -1960,10 +1970,6 @@ body {
   top: 1.75rem;
 }
 
-.left-2\/4{
-  left: 50%;
-}
-
 .-z-10{
   z-index: -10;
 }
@@ -1978,6 +1984,10 @@ body {
 
 .order-2{
   order: 2;
+}
+
+.m-2{
+  margin: 0.5rem;
 }
 
 .mx-3{
@@ -1995,10 +2005,6 @@ body {
 
 .mb-20{
   margin-bottom: 5rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -2025,10 +2031,6 @@ body {
   margin-right: 1rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-20{
   margin-top: 5rem;
 }
@@ -2037,8 +2039,8 @@ body {
   margin-top: 1rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .block{
@@ -2065,6 +2067,10 @@ body {
   height: 20rem;
 }
 
+.h-\[600px\]{
+  height: 600px;
+}
+
 .h-\[70px\]{
   height: 70px;
 }
@@ -2083,6 +2089,10 @@ body {
 
 .w-0{
   width: 0px;
+}
+
+.w-80{
+  width: 20rem;
 }
 
 .w-full{
@@ -2175,10 +2185,6 @@ body {
   gap: 1.25rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-7{
   gap: 1.75rem;
 }
@@ -2195,9 +2201,18 @@ body {
   border-width: 2px;
 }
 
+.bg-main-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+}
+
 .bg-orange{
   --tw-bg-opacity: 1;
   background-color: rgb(250 132 43 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .object-contain{
@@ -2210,12 +2225,12 @@ body {
      object-fit: cover;
 }
 
-.p-4{
-  padding: 1rem;
+.p-10{
+  padding: 2.5rem;
 }
 
-.p-5{
-  padding: 1.25rem;
+.p-4{
+  padding: 1rem;
 }
 
 .px-4{
@@ -2247,6 +2262,10 @@ body {
   padding-bottom: 2.75rem;
 }
 
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
 .pt-12{
   padding-top: 3rem;
 }
@@ -2261,6 +2280,10 @@ body {
 
 .pt-64{
   padding-top: 16rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -2430,6 +2453,7 @@ body {
 
 .back {
   position: relative;
+  background-color: #1F1F1F;
 }
 
 .back:before {
@@ -2443,8 +2467,10 @@ body {
   background-position: 50% 0;
   background-image: url('../src/img/logo.svg');
   background-repeat: repeat;
-  opacity: .6;
+  opacity: .1;
 }
+
+/* Теперь определим стили для маленьких экранов (менее 600px) */
 
 .hero__bg {
   position: absolute;
@@ -2505,6 +2531,42 @@ body {
   justify-content: center;
 }
 
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-shrink:0;
+  width:100%;
+  height:100%;
+  position:relative;
+  transition-property:transform
+}
+
+.swiper-slide ul {
+  padding-left: 20px;
+  /* Добавление отступа слева */
+}
+
+.swiper-slide ul li {
+  position: relative;
+  /* Позиционирование для псевдоэлемента */
+  padding-left: 15px;
+  /* Отступ от точки */
+  padding-top: 5px;
+}
+
+.swiper-slide ul li::before {
+  content: "•";
+  /* Содержимое псевдоэлемента, в данном случае, это будет точка */
+  position: absolute;
+  /* Позиционирование псевдоэлемента */
+  left: 0;
+  /* Расположение псевдоэлемента слева от текста */
+}
+
 .hover\:text-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(250 132 43 / var(--tw-text-opacity));
@@ -2513,10 +2575,6 @@ body {
 @media (min-width: 768px){
   .sm\:absolute{
     position: absolute;
-  }
-
-  .sm\:left-1\/4{
-    left: 25%;
   }
 
   .sm\:top-1\/4{
@@ -2535,17 +2593,8 @@ body {
     display: block;
   }
 
-  .sm\:grid{
-    display: grid;
-  }
-
   .sm\:hidden{
     display: none;
-  }
-
-  .sm\:columns-2{
-    -moz-columns: 2;
-         columns: 2;
   }
 
   .sm\:grid-cols-2{
@@ -2562,6 +2611,11 @@ body {
     line-height: 2rem;
   }
 
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -2572,9 +2626,19 @@ body {
     line-height: 1;
   }
 
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:text-xl{
@@ -2612,6 +2676,10 @@ body {
     height: 100%;
   }
 
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2637,9 +2705,29 @@ body {
     padding-top: 0.5rem;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .md\:text-9xl{
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2647,5 +2735,10 @@ body {
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }

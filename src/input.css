@@ -93,6 +93,7 @@
 
 .back {
     position: relative;
+    background-color: #1F1F1F;
 }
 
 .back:before {
@@ -106,8 +107,10 @@
     background-position: 50% 0;
     background-image: url('../src/img/logo.svg');
     background-repeat: repeat;
-    opacity: .6;
+    opacity: .1;
 }
+
+/* Теперь определим стили для маленьких экранов (менее 600px) */
 
 
 .hero__bg {
@@ -135,6 +138,7 @@
     .person__img {
         width: 120px;
     }
+    
 }
 
 .marketing__list {
@@ -170,4 +174,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.swiper-slide {
+    flex-shrink:0;
+    width:100%;
+    height:100%;
+    position:relative;
+    transition-property:transform
+}
+
+.swiper-slide ul {
+    padding-left: 20px; /* Добавление отступа слева */
+}
+
+.swiper-slide ul li {
+    position: relative; /* Позиционирование для псевдоэлемента */
+    padding-left: 15px; /* Отступ от точки */
+    padding-top: 5px;
+}
+
+.swiper-slide ul li::before {
+    content: "•"; /* Содержимое псевдоэлемента, в данном случае, это будет точка */
+    position: absolute; /* Позиционирование псевдоэлемента */
+    left: 0; /* Расположение псевдоэлемента слева от текста */
 }

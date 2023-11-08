@@ -15,14 +15,11 @@
 <body>
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
         <header class="z-10 w-full transition-colors fixed">
-
+            <span class="absolute top-7 left-7 sm:hidden"><img src="./src/img/logo.png" alt="логотип" /></span>
             <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
 
                 <div class="flex justify-center items-center gap-4">
-                    <img src="./src/img/logo.png" alt="">
-                    <!-- <img src="./src/img/logo_title.png" alt="">
-                        <img src="./src/img/vertical.svg" alt="">
-                        <span class="font-light">Юридическая <br> компания</span> -->
+                    <img src="./src/img/logo.png" alt="логотип">
                 </div>
 
 
@@ -84,11 +81,6 @@
 
 
 
-                <!-- <button class="text-xl font-semibold uppercase"> Записаться на консультацию</button> -->
-
-                <!-- <img src="./src/img/logo.png" alt=""> -->
-
-
                 <button class="btn-close-menu md:hidden absolute top-5 right-5">
                     <svg viewBox="0 0 64 48">
                         <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -102,86 +94,70 @@
         </header>
 
         <main>
-            <section class="hero h-screen">
-
+            <section class="hero relative">
+                <img class="absolute top-0 right-0 -z-10" width="1550" height="750" src="./src/img/main-bg.png"
+                    alt="персона-1">
                 <div class="container h-full text-5xl md:text-9xl pt-64 relative">
-
-
-                    <h2 class="text-sm lg:text-3xl text-orange uppercase font-light ">Опыт. Профессионализм. Результат.
-                    </h2>
-                    <h1 class=" hero__title text-7xl uppercase font-semibold">Юристы, которые <br> реально решают
-                        <br>проблемы
-                    </h1>
-
-                    <img class="hero__bg" src="./src/img/main-bg.png">
-
-
-                    <div class="flex justify-between items-end mt-20 ">
-                        <div class="flex flex-row gap-16 md:flex-row">
-                            <div class="flex flex-col">
-                                <img class="person__img rounded-full" src="./src/img/person_1.png" alt="" width="210">
-                                <div class="text-xl uppercase">Дмитрий Соколов</div>
-                            </div>
-
-                            <div class="flex flex-col">
-                                <img class="person__img rounded-full" src="./src/img/person_2.png" alt="" width="210">
-                                <span class="text-xl uppercase">Дарья Коренева</span>
+                    <div class="mb-10 max-w-[775px]">
+                        <h2 class="text-sm lg:text-3xl text-orange uppercase font-light ">Опыт. Профессионализм. Результат.
+                        </h2>
+                        <h1 class=" hero__title text-7xl uppercase font-semibold">Юристы, которые <br> реально решают
+                            <br>проблемы
+                        </h1>
+                        
+                        <div class="flex justify-between items-end mt-20 ">
+                            <div class="flex flex-row gap-16 md:flex-row">
+                                <div class="flex flex-col">
+                                    <img class="person__img rounded-full" src="./src/img/person_1.png" alt="человек 1" width="210">
+                                    <div class="text-xl uppercase">Дмитрий Соколов</div>
+                                </div>
+    
+                                <div class="flex flex-col">
+                                    <img class="person__img rounded-full" src="./src/img/person_2.png" alt="человек 2" width="210">
+                                    <span class="text-xl uppercase">Дарья Коренева</span>
+                                </div>
                             </div>
                         </div>
-                        <button class="text-xl font-semibold uppercase"> Записаться на консультацию</button>
+                
+                        <div class="flex flex-wrap gap-10 items-center mt-6">
+                            <a href="#" class="link">Записаться на консультацию</a>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
+
+
             <section class="back">
-                <ul class="flex items-center justify-center gap-10 pt-93 h-80 relative flex-wrap">
-                    <li>
-                        <img src="./src/img/Vector 113.svg" alt="">
-                        <div class="uppercase text-orange font-bold text-7xl">99%</div>
-                        <div class="text-lg font-normal">выйгранных дел</div>
-                    </li>
-
-                    <li>
-                        <img src="./src/img/Vector 113.svg" alt="">
-                        <div class="uppercase text-orange font-bold text-7xl">Более 10</div>
-                        <div class="text-lg font-normal">судебной практики</div>
-                    </li>
-
-                    <li>
-                        <img src="./src/img/Vector 113.svg" alt="">
-                        <div class="uppercase text-orange font-bold text-7xl">2000+</div>
-                        <div class="text-lg font-normal">довольных клиентов</div>
-                    </li>
-
-                    <li>
-
-                        <img src="./src/img/Vector 113.svg" alt="">
-                        <div class="uppercase text-orange font-bold text-7xl">Более 6000</div>
-                        <div class="text-lg font-normal">судебных заседаний</div>
-                    </li>
-                </ul>
-
-                <!-- <ul class="gallery-wrapper sertificate-swiper">
-                    <div class="flex swiper-wrapper">
-                        <li class="sertificate-slide">
-                            <img src="./src/img/Vector 113.svg" alt="">
-                            <div class="uppercase text-orange font-bold text-7xl">99%</div>
-                            <div class="text-lg font-normal">выйгранных дел</div>
+                <div class="container">
+                    <ul class="flex items-center justify-center gap-10 pt-93 h-80 relative flex-wrap">
+                        <li>
+                            <img src="./src/img/Vector_113.svg" alt="вектор 1">
+                            <div class="uppercase text-orange font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">99%</div>
+                            <div class="md:text-lg sm:text-smfont-normal ">выйгранных дел</div>
                         </li>
-                        <li class="sertificate-slide">
-                            <img src="./src/img/Vector 113.svg" alt="">
-                            <div class="uppercase text-orange font-bold text-7xl">99%</div>
-                            <div class="text-lg font-normal">выйгранных дел</div>
+    
+                        <li>
+                            <img src="./src/img/Vector_113.svg" alt="вектор 2">
+                            <div class="uppercase text-orange font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Более 10</div>
+                            <div class="md:text-lg sm:text-sm font-normal">судебной практики</div>
                         </li>
-                        <li class="sertificate-slide">
-                            <img src="./src/img/Vector 113.svg" alt="">
-                            <div class="uppercase text-orange font-bold text-7xl">99%</div>
-                            <div class="text-lg font-normal">выйгранных дел</div>
+    
+                        <li>
+                            <img src="./src/img/Vector_113.svg" alt="вектор 3">
+                            <div class="uppercase text-orange font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">2000+</div>
+                            <div class="md:text-lg sm:text-sm font-normal">довольных клиентов</div>
                         </li>
-                    </div>
-                </ul> -->
-
+    
+                        <li>
+    
+                            <img src="./src/img/Vector_113.svg" alt="вектор 4">
+                            <div class="uppercase text-orange font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Более 6000</div>
+                            <div class="md:text-lg sm:text-sm font-normal">судебных заседаний</div>
+                        </li>
+                    </ul>
+                </div>
+                
             </section>
 
             <section class="person py-10 page-section-1">
@@ -192,7 +168,7 @@
 
                         <div class="md:-ml-16 relative">
                             <img class="absolute -top-28 -right-72 hidden sm:block -z-10"
-                                src="src/img/person/rect-1.svg" height="650" alt="">
+                                src="src/img/person/rect-1.svg" height="650" alt="картинка">
                             <h2 class="text-2xl sm:text-6xl font-droidFontRegular font-bold mb-5 sm:mb-10 uppercase">
                                 Дмитрий
                                 Соколов</h2>
@@ -217,9 +193,9 @@
                     <div class="person__wrapper flex flex-col md:grid md:grid-cols-2 py-7 gap-7">
                         <div class="order-2 relative">
                             <img class="absolute -top-36 left-20 hidden sm:block" src="./src/img/person/rect-2.svg"
-                                alt="">
+                                alt="картинка">
                             <img class="absolute -bottom-14 left-20 hidden sm:block" src="./src/img/person/rect-3.svg"
-                                alt="">
+                                alt="картинка">
                             <h2 class="text-2xl sm:text-6xl font-droidFontRegular font-bold mb-5 sm:mb-10 uppercase">
                                 Дарья
                                 коренева</h2>
@@ -249,6 +225,7 @@
             </section>
 
             <div class="container">
+                <div></div>
                 <section class="sectionPin">
                     <div class="pin-wrap-sticky">
                         <div class="pin-wrap">
@@ -304,134 +281,121 @@
                 </section>
             </div>
 
-            <section class="services py-10 page-section-3">
-                <div class="container">
-                    <h2 class="text-4xl mb-6">Услуги</h2>
-                    <div class="grid md:grid-cols-2 gap-16 _tabs">
-                        <nav class="program__nav">
-                            <button class="_tabs-item _active" data-tab="#tab1">Физики</button>
-                            <button class="_tabs-item" data-tab="#tab2">Юрики</button>
-                        </nav>
+            <section class="services py-10 page-section-3 mb-20">
+                <div class="container relative">
+                    <h2 class="text-4xl mb-6 text-orange">Услуги</h2>
 
-                        <div class="flex flex-col justify-between _tabs-block _active" id="tab1">
-                            <div>
-                                <h3 class="text-lg mb-5 font-semibold">Услуги юриста для физических лиц</h3>
-                                <p class="mb-2">В современном мире каждый из нас сталкивается с различными юридическими
-                                    вопросами и
-                                    проблемами, требующими профессиональной помощи. Услуги юриста для физических лиц
-                                    могут
-                                    быть необходимы в самых разных ситуациях – от решения бытовых вопросов до сложных
-                                    судебных разбирательств.</p>
-                                <p>
-                                    Наши юристы обладают большим опытом работы с физическими лицами и готовы оказать
-                                    помощь
-                                    в следующих вопросах:
-                                </p>
+                    <h1 class="md:text-7xl sm:text-2xl uppercase font-semibold">Мы специализируемся <br> в следующих областях
+                    </h1>
+
+                    <img class="absolute top-0 right-0 -z-10 object-contain md:object-cover"
+                            src="./src/img/service.png" alt="сервис">
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper flex items-center justify-center flex-row flex-wrap">
+                                    <div class="swiper-item bg-main-black bg-opacity-50 h-[600px] m-2 p-4 w-80 text-left relative">
+                                        <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5 ">Представительство в судах. Ведение переговоров</h2>
+                                        <ul>
+                                            <li>Представляем интересы доверителей во всех судах и регионах Российской Федерации.</li>
+                                            <li>Имеем опыт участия в судах города Москвы и Санкт-Петербурга, в том числе в высших инстанциях.</li>
+                                            <li>Наши адвокаты обладают высокой квалификацией в различных сферах права и постоянно повышают свой профессиональный уровень.</li>
+                                            <li>Проведем переговоры с Вашими контрагентами, чтобы достичь взаимовыгодного решения конфликтной ситуации, без обращения в суд. Вы сэкономите нервы, время и деньги!</li>
+                                        </ul>
+                                        <img class="absolute bottom-0 right-0 -z-10" src="./src/img/services/1.png" alt="единица">
+                                    </div>
+                                    <div class="swiper-item bg-main-black bg-opacity-50 h-[600px] m-2 p-4 w-80 text-left">
+                                        <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Арбитражные судебные споры</h2>
+                                        <ul>
+                                            <li>Занимаясь бизнесом, мы неизменно сталкиваемся с различными сложностями юридического характера, проще всего решить которые, обратившись к адвокату по арбитражным спорам. Если дело дошло до суда, то в подобном случае экономить на квалификации услуг юриста либо адвоката не следует. </li>
+                                            <br>
+                                            <li>Необходимо обратиться в специализированную адвокатскую контору, которая помогает решить арбитражные споры, что в свою очередь существенно упрощает ведение бизнеса.</li>
+                                        </ul>
+                                        <img class="absolute bottom-0 right-0 -z-10" src="./src/img/services/2.png" alt="двоечка">
+                                    </div>
+                                    <div class="swiper-item bg-main-black bg-opacity-50 h-[600px] m-2 p-4 w-80 text-left">
+                                        <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Ведение уголовных дел. Адвокат</h2>
+                                        <ul>
+                                            <li>Когда Вы подверглись преследованию со стороны правоохранительных органов либо стали потерпевшим, то незамедлительно следует обратиться за правовой помощью к адвокату, который специализируется на уголовных делах.</li>
+                                            <li>Адвокат поможет выбрать оптимальную стратегию по делу и защитить Ваши интересы и свободу.</li>
+                                        </ul>
+                                        <img class="absolute bottom-0 right-0 -z-10" src="./src/img/services/3.png" alt="троечка">
+                                    </div>
+                                    <div class="swiper-item bg-main-black bg-opacity-50 h-[600px] m-2 p-4 w-80 text-left">
+                                        <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Решение брачно-семейных вопросов</h2>
+                                        <ul>
+                                            <li>Решение Ваших брачно-семейных вопросов: расторжение брака, раздел совместно нажитого имущества, взыскание алиментов, лишение родительских прав, определение места жительства ребёнка, определение порядка общения с ребёнком.</li>
+                                            <li>Не стоит медлить с решением данных щепетильных вопросов, а лучше доверить их профессиональным адвокатам!</li>
+                                        </ul>
+                                        <img class="absolute bottom-0 right-0 -z-10" src="./src/img/services/4.png" alt="четыре">
+                                    </div>
+                                </div>
                             </div>
-
-                            <ul class="mt-10 sm:grid sm:grid-cols-2 gap-6">
-                                <li class="bg-orange p-5 mb-3">консультация по всем вопросам, связанным с
-                                    законодательством
-                                </li>
-                                <li class="bg-orange p-5 mb-3">составление и анализ договоров, соглашений, претензий и
-                                    других
-                                    документов;</li>
-                                <li class="bg-orange p-5 mb-3">представление интересов клиента в судах и других органах
-                                    власти;</li>
-                                <li class="bg-orange p-5 mb-3">сопровождение сделок с недвижимостью;
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="flex flex-col justify-between _tabs-block" id="tab2">
-                            <div>
-                                <h3 class="text-lg mb-5 font-semibold">Услуги юриста для юридических лиц</h3>
-                                <p class="mb-2">В современном мире каждый из нас сталкивается с различными юридическими
-                                    вопросами и
-                                    проблемами, требующими профессиональной помощи. Услуги юриста для физических лиц
-                                    могут
-                                    быть необходимы в самых разных ситуациях – от решения бытовых вопросов до сложных
-                                    судебных разбирательств.</p>
-                                <p>
-                                    Наши юристы обладают большим опытом работы с физическими лицами и готовы оказать
-                                    помощь
-                                    в следующих вопросах:
-                                </p>
-                            </div>
-                            <ul class="mt-8 sm:grid sm:grid-cols-2 gap-4">
-                                <li class="bg-orange p-5 mb-3">консультация по всем вопросам, связанным с
-                                    законодательством
-                                </li>
-                                <li class="bg-orange p-5 mb-3">составление и анализ договоров, соглашений, претензий и
-                                    других
-                                    документов;</li>
-                                <li class="bg-orange p-5 mb-3">представление интересов клиента в судах и других органах
-                                    власти;</li>
-                                <li class="bg-orange p-5 mb-3">сопровождение сделок с недвижимостью;
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        
+                  
                 </div>
             </section>
 
-            <section class="clients w-0 min-w-[100%] py-10 page-section-4">
+            <section class="clients w-0 min-w-[100%] p-10 page-section-4 back">
                 <div class="container">
-                    <h2 class="text-4xl mb-6">Наши клиенты</h2>
-                    <p class="sm:columns-2">Мы гордимся тем, что наша компания успешно сотрудничает с множеством
-                        клиентов -
-                        как частных лиц,
-                        так и крупных корпораций. Благодаря нашим профессиональным юристам и их опыту, мы можем
-                        предложить качественные юридические услуги, которые помогают нашим клиентам решать различные
-                        проблемы и достигать успеха. Среди наших клиентов можно найти как небольшие фирмы, так и крупные
-                        корпорации, такие как “Газпром”, “Лукойл” и другие. Мы ценим каждого клиента и стараемся
-                        предложить им наилучший сервис и наиболее эффективные решения. Мы рады, что наши клиенты
-                        доверяют нам и рекомендуют нас своим знакомым. Это подтверждает, что мы работаем на высоком
-                        уровне и предлагаем качественные услуги. Надеемся, что и вы станете нашим клиентом и оцените все
-                        преимущества работы с нами!</p>
+                    <h2 class="text-4xl mb-6 text-orange">Клиенты</h2>
 
-                    <div class="clients-swiper swiper relative">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide text-center" data-wow-delay="0.2s">
-                                <a href="#">
-                                    <img loading="lazy" src="./src/img/12.png" width="327" height="242" alt="logo">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center" data-wow-delay="0.4s">
-                                <a href="#">
-                                    <img loading="lazy" src="./src/img/12.png" width="327" height="242" alt="logo">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center" data-wow-delay="0.6s">
-                                <a href="#">
-                                    <img loading="lazy" src="./src/img/12.png" width="327" height="242" alt="logo">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center" data-wow-delay="0.8s">
-                                <a href="#">
-                                    <img loading="lazy" src="./src/img/12.png" width="327" height="242" alt="logo">
-                                </a>
-                            </div>
+                    <h1 class="md:text-6xl sm:text-2xl uppercase font-semibold mb-4">Нам доверяют <br>
+                    </h1>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="text-block md:w-1/2 p-4 m-2"> 
+                            <p class="pb-3">Мы гордимся тем, что наша компания успешно сотрудничает с множеством клиентов - как частных лиц, так и крупных корпораций. Благодаря нашим профессиональным юристам.</p>
+                            <p>Мы рады, что наши клиенты доверяют нам и рекомендуют нас своим знакомым. Это подтверждает, что мы работаем на высоком уровне и предлагаем качественные услуги. Надеемся, что и вы станете нашим клиентом и оцените все преимущества.</p>
                         </div>
-                        <div class="swiper-button-wrapper">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                        <div class="text-block md:w-1/2 p-4 m-2"> 
+                            <p>Среди наших клиентов можно найти как небольшие фирмы, так и крупные корпорации, такие как “Газпром”, “Лукойл” и другие. Мы ценим каждого клиента и стараемся предложить им наилучший сервис и наиболее эффективные решения. Мы рады, что наши клиенты доверяют нам и рекомендуют нас своим знакомым. Это подтверждает, что мы работаем.</p>
                         </div>
                     </div>
+
+                
+                    <div class="flex items-center justify-center flex-row flex-wrap">
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                        <div>
+                            <img src="./src/img/company/sber.png" alt="логотип_1">
+                        </div>
+                    
+                    </div>
+
                 </div>
             </section>
 
-            <section class="contacts py-10">
+            <section class="contacts py-10 relative">
+                <img class="absolute top-0 left-0 w-full h-full object-cover -z-10" src="./src/img/form-bg.webp">
                 <div class="container">
-                    <section class="form-section">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__descriptions">
+                            <h2 class="contacts__title">Свяжитесь с нами для <span>бесплатной</span> оценки дела</h2>
+                            <p class="contacts__text">Когда вы сталкиваетесь с юридической дилеммой, будь то иск
+                                о телесных повреждениях или уголовное обвинение, вашим первым шагом должно стать доверие
+                                к знаниям и навыкам нашей компании</p>
+                        </div>
+
                         <div class="form-wrapper">
                             <form action="#" id="form" class="form__body validate-form">
-                                <h2 class="form__title">Напишите нам</h2>
-                                <p class="form__sub-title">Когда вы сталкиваетесь с юридической дилеммой, будь то иск о
-                                    телесных повреждениях или уголовное
-                                    обвинение, вашим первым шагом должно стать доверие к знаниям и навыкам нашей
-                                    компании</p>
-
                                 <div class="form-inner">
                                     <div class="form__item">
                                         <input id="formName" type="text" name="name" class="form__input _req"
@@ -449,21 +413,44 @@
                                     </div>
 
                                     <div class="form__item">
-                                        <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                                        <textarea name="message" id="formMessage" class="form__input _req"
+                                            placeholder="Опишите проблему"></textarea>
                                     </div>
 
-                                    <button type="submit" class="form__button">Оставить заявку</button>
+                                    <button type="submit" class="link">Оставить заявку</button>
                                 </div>
                             </form>
                         </div>
-                    </section>
+                    </div>
+                    <!-- /container -->
                 </div>
             </section>
         </main>
 
-        <footer class="py-12 bg-orange">
+         <footer class="footer py-10">
             <div class="container">
-                footer
+                <div class="footer__wrapper flex flex-wrap justify-between gap-5">
+                    <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
+                    <address>
+                        г. Владивосток <br>
+                        ул. Светланская 10<br>
+                        <a class="text-orange mt-4 block" href="#" target="_blank" rel="noopener noreferrer">Посмотреть
+                            на
+                            карте</a>
+                    </address>
+
+                    <ul>
+                        <li>ИНН 1101174277</li>
+                        <li>ОГРН 1221100002540</li>
+                    </ul>
+
+                    <div>
+                        <p class="mb-5">Позвоните нам для получения
+                            <span class="text-orange block">бесплатной консультации</span>
+                        </p>
+                        <a href="tel:+79021253645">7 (902) 125-36-45</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
@@ -471,7 +458,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/baguettebox.js"></script>
     <script src="js/wow.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
