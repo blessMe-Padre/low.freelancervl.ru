@@ -1,15 +1,18 @@
 import { iniStickyHeader } from './modules/sticky-header.js';
 import { initSertificateSlider } from './modules/item-sliders.js';
 import { cookieConsentChecker } from './modules/cookie-consent-checker.js';
-import { initServiceSlider} from './modules/servicesSlider.js';
+
+import { initServiceSlider } from './modules/servicesSlider.js'
+import { initHeroSlider } from './modules/hero-slider.js';
+
 
 window.addEventListener('DOMContentLoaded', () => {
+    console.log('подключен скрипт main.js');
     iniStickyHeader();
     initSertificateSlider();
     cookieConsentChecker();
     initServiceSlider();
-
-    console.log('подключен скрипт main.js');
+    initHeroSlider();
 
     const body = document.querySelector('body');
     const header = document.querySelector('header');

@@ -20,6 +20,59 @@
   color: #ffffff;
 }
 
+.hero-item {
+  position: relative;
+}
+
+.hero-item img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-item:hover img {
+  transform: scale(1.1);
+}
+
+.hero-item.is-active .hero-item__wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hero-item__wrapper {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.hero-item__list {
+  display: flex;
+}
+
+.hero-item__item {
+  display: flex;
+  width: 525px;
+  height: 235px;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 20px;
+  background: rgba(33, 33, 33);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hero-item__item img {
+  flex-shrink: 0;
+}
+
+.hero-item__item a {
+  color: #FA842B;
+}
+
 .btn-close-menu {
   --color: #f2f2f2;
   width: 36px;
@@ -262,7 +315,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -272,7 +326,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1335,7 +1390,7 @@ address {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -2007,6 +2062,10 @@ body {
   order: 2;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -2142,13 +2201,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.list-disc{
-  list-style-type: disc;
-}
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2218,10 +2270,6 @@ body {
   overflow: hidden;
 }
 
-.whitespace-nowrap{
-  white-space: nowrap;
-}
-
 .rounded-full{
   border-radius: 9999px;
 }
@@ -2243,10 +2291,6 @@ body {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-4{
@@ -2583,10 +2627,6 @@ svg {
     margin-top: 10rem;
   }
 
-  .sm\:mt-5{
-    margin-top: 1.25rem;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -2666,10 +2706,6 @@ svg {
     margin-left: -4rem;
   }
 
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:flex{
     display: flex;
   }
@@ -2742,14 +2778,6 @@ svg {
 }
 
 @media (min-width: 1280px){
-  .lg\:justify-center{
-    justify-content: center;
-  }
-
-  .lg\:gap-20{
-    gap: 5rem;
-  }
-
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2758,10 +2786,5 @@ svg {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
