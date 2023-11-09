@@ -1,6 +1,7 @@
 import { iniStickyHeader } from './modules/sticky-header.js';
 import { initSertificateSlider } from './modules/item-sliders.js';
 import { cookieConsentChecker } from './modules/cookie-consent-checker.js';
+
 import { initServiceSlider } from './modules/servicesSlider.js'
 import { initHeroSlider } from './modules/hero-slider.js';
 
