@@ -315,7 +315,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -325,7 +326,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1388,7 +1390,7 @@ address {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -2060,6 +2062,10 @@ body {
   order: 2;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -2161,27 +2167,7 @@ body {
   width: 0px;
 }
 
-.w-\[1200px\]{
-  width: 1200px;
-}
-
 .w-full{
-  width: 100%;
-}
-
-.w-\[1600px\]{
-  width: 1600px;
-}
-
-.w-\[3200px\]{
-  width: 3200px;
-}
-
-.w-\[0\]{
-  width: 0;
-}
-
-.w-\[100\%\]{
   width: 100%;
 }
 
@@ -2213,10 +2199,6 @@ body {
 .-translate-y-2\/4{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.list-disc{
-  list-style-type: disc;
 }
 
 .grid-cols-2{
@@ -2287,10 +2269,6 @@ body {
   overflow: hidden;
 }
 
-.whitespace-nowrap{
-  white-space: nowrap;
-}
-
 .rounded-full{
   border-radius: 9999px;
 }
@@ -2314,13 +2292,6 @@ body {
      object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
-.p-2{
-  padding: 0.5rem;
-}
-
->>>>>>> 27dc0af9675ec770ffcc4ff1bf48193dc693276c
 .p-4{
   padding: 1rem;
 }
@@ -2641,10 +2612,6 @@ body {
     margin-top: 10rem;
   }
 
-  .sm\:mt-5{
-    margin-top: 1.25rem;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -2724,10 +2691,6 @@ body {
     margin-left: -4rem;
   }
 
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:flex{
     display: flex;
   }
@@ -2800,14 +2763,6 @@ body {
 }
 
 @media (min-width: 1280px){
-  .lg\:justify-center{
-    justify-content: center;
-  }
-
-  .lg\:gap-20{
-    gap: 5rem;
-  }
-
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2816,10 +2771,5 @@ body {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
