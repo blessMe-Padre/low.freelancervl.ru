@@ -13,6 +13,7 @@
 @import './block/cookies.css';
 @import './block/contacts.css';
 @import './block/footer.css';
+@import './block/services.css';
 
 
 /* Импорт TailWind */
@@ -87,13 +88,14 @@
 }
 
 .header-fix {
-    background: rgba(255, 255, 255, .9);
+    background: rgba(38, 38, 38, 0.60);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
 .back {
     position: relative;
     background-color: #1F1F1F;
+    z-index: -1;
 }
 
 .back:before {

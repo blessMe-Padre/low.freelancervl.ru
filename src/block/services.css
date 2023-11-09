@@ -1,0 +1,22 @@
+.swiper-item1 {
+    background: rgba(38, 38, 38, 0.60);
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.swiper-item1 ul {
+    padding-left: 20px;
+}
+
+.swiper-item1 ul li {
+    position: relative; 
+    padding-top: 5px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: gray;
+}
+
