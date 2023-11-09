@@ -262,7 +262,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -272,7 +273,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1169,7 +1171,7 @@ textarea.form__input {
 }
 
 .link {
-  height: 62px;
+  min-height: 62px;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1314,7 +1316,7 @@ address {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -2067,10 +2069,6 @@ body {
   height: 20rem;
 }
 
-.h-\[600px\]{
-  height: 600px;
-}
-
 .h-\[70px\]{
   height: 70px;
 }
@@ -2089,10 +2087,6 @@ body {
 
 .w-0{
   width: 0px;
-}
-
-.w-80{
-  width: 20rem;
 }
 
 .w-full{
@@ -2201,18 +2195,9 @@ body {
   border-width: 2px;
 }
 
-.bg-main-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
-}
-
 .bg-orange{
   --tw-bg-opacity: 1;
   background-color: rgb(250 132 43 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
 }
 
 .object-contain{
@@ -2280,10 +2265,6 @@ body {
 
 .pt-64{
   padding-top: 16rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -2531,42 +2512,6 @@ body {
   justify-content: center;
 }
 
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  height: 100%;
-}
-
-.swiper-slide {
-  flex-shrink:0;
-  width:100%;
-  height:100%;
-  position:relative;
-  transition-property:transform
-}
-
-.swiper-slide ul {
-  padding-left: 20px;
-  /* Добавление отступа слева */
-}
-
-.swiper-slide ul li {
-  position: relative;
-  /* Позиционирование для псевдоэлемента */
-  padding-left: 15px;
-  /* Отступ от точки */
-  padding-top: 5px;
-}
-
-.swiper-slide ul li::before {
-  content: "•";
-  /* Содержимое псевдоэлемента, в данном случае, это будет точка */
-  position: absolute;
-  /* Позиционирование псевдоэлемента */
-  left: 0;
-  /* Расположение псевдоэлемента слева от текста */
-}
-
 .hover\:text-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(250 132 43 / var(--tw-text-opacity));
@@ -2599,6 +2544,10 @@ body {
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:p-10{
+    padding: 2.5rem;
   }
 
   .sm\:py-24{

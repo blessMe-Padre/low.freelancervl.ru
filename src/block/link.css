@@ -1,5 +1,5 @@
 .link {
-    height: 62px;
+    min-height: 62px;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
