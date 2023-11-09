@@ -1,61 +1,43 @@
 export const initServiceSlider = () => {
-    console.log('asdf')
-  const exclusiveSlider = document.querySelector('.swiper-container');
 
-  if (exclusiveSlider) {
-      const sliderItems = document.querySelectorAll('.swiper-item');
-      if (window.innerWidth < 1023) {
-          console.log('f')
-          sliderItems.forEach((slide) => {
-              slide.classList.add('swiper-slide');
-          });
+    const exclusiveSlider1 = document.querySelector('.services-swiper');
 
-          console.log('количество items', sliderItems);
-      }
+    console.log(window.innerWidth)
 
-      let breakpoint = window.matchMedia('(min-width:1023px)');
-      let swiper;
+    if (exclusiveSlider1) {
+        const sliderItems1 = document.querySelectorAll('.swiper-item1');
+        if (window.innerWidth < 1023) {
+            sliderItems1.forEach((slide) => {
+                slide.classList.add('swiper-slide');
+            });
+        }
 
-      const breakpointChecker = function () {
-          if (breakpoint.matches === true) {
+        let breakpoint = window.matchMedia('(min-width:1023px)');
+        let swiper;
 
-              if (swiper !== undefined) {
-                  swiper.destroy(true, true);
-              } return;
+        const breakpointChecker = function () {
+            if (breakpoint.matches === true) {
 
-          } else if (breakpoint.matches === false) {
-              // eslint-disable-next-line consistent-return
-              return exclusiveSliderInit();
-          }
-      };
+                if (swiper !== undefined) {
+                    swiper.destroy(true, true);
+                } return;
 
-      const exclusiveSliderInit = function () {
-          swiper = new Swiper(exclusiveSlider, {
-              loop: true,
-              spaceBetween: 30,
-              init: true,
-              slidesPerView: 1.5,
-              breakpoints: {
-                  320: {
-                      slidesPerView: 1.5,
-                      spaceBetween: 20,
-                  },
+            } else if (breakpoint.matches === false) {
+                // eslint-disable-next-line consistent-return
+                return exclusiveSliderInit1();
+            }
+        };
 
-                  500: {
-                      slidesPerView: 2.5,
-                      spaceBetween: 30,
-                  },
+        const exclusiveSliderInit1 = function () {
+            swiper = new Swiper(exclusiveSlider1, {
+                loop: true,
+                spaceBetween: 30,
+                init: true,
+                slidesPerView: 1,
+            });
+        };
 
-                  767: {
-                      slidesPerView: 3.5,
-                      spaceBetween: 30,
-                  },
-              },
-
-          });
-      };
-
-      breakpoint.addEventListener('change', breakpointChecker);
-      breakpointChecker();
-  }
+        breakpoint.addEventListener('change', breakpointChecker);
+        breakpointChecker();
+    }
 }
