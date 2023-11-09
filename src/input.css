@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 /* Импорт кастомных стилей для компонентов */
 @import './block/button.css';
+@import './block/hero.css';
 @import './block/menu-button.css';
 @import './block/menu.css';
 @import './block/swiper.css';
