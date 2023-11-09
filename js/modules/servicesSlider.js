@@ -34,6 +34,10 @@ export const initServiceSlider = () => {
                 spaceBetween: 30,
                 init: true,
                 slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  }
             });
         };
 

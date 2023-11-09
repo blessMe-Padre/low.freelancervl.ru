@@ -1,6 +1,6 @@
 export const initSertificateSlider = () => {
     // слайдер "сертификаты"
-    const exclusiveSlider = document.querySelector('.sertificate-swiper');
+    const exclusiveSlider = document.querySelector('.swiper');
 
     if (exclusiveSlider) {
         const sliderItems = document.querySelectorAll('.sertificate-slide');
