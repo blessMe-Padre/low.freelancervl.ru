@@ -48,6 +48,14 @@
   z-index: 9999;
 }
 
+.hero-item__wrapper-1 {
+  width: 70vw;
+}
+
+.hero-item__wrapper-2 {
+  width: 60vw;
+}
+
 .hero-item__list {
   display: flex;
 }
@@ -71,6 +79,34 @@
 
 .hero-item__item a {
   color: #FA842B;
+}
+
+@media(max-width: 767px) {
+  .hero-item__wrapper {
+    top: 200px;
+    left: 0;
+    width: 100%;
+  }
+
+  .hero-item__item {
+    padding: 10px;
+    font-size: 12px !important;
+  }
+
+  .hero-item__wrapper-1 {
+    width: 90vw;
+  }
+
+  .hero-item__wrapper-2 {
+    width: 90vw;
+    left: -270px;
+  }
+}
+
+@media(max-width: 1280px) {
+  .hero-item__wrapper-2 {
+    width: 50vw;
+  }
 }
 
 .btn-close-menu {
@@ -315,7 +351,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -325,7 +362,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1388,7 +1426,7 @@ address {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -2175,6 +2213,10 @@ body {
 
 .max-w-3xl{
   max-width: 48rem;
+}
+
+.max-w-\[100\%\]{
+  max-width: 100%;
 }
 
 .max-w-\[775px\]{

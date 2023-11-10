@@ -8,6 +8,7 @@ import { initHeroSlider } from './modules/hero-slider.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
+    console.log(window.innerWidth);
     iniStickyHeader();
     initSertificateSlider();
     cookieConsentChecker();
