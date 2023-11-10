@@ -15,6 +15,7 @@
 @import './block/contacts.css';
 @import './block/footer.css';
 @import './block/services.css';
+@import './block/animate.css';
 
 
 
@@ -95,46 +96,12 @@
 }
 
 
-.back {
-    position: relative;
-    background-color: #1F1F1F;
-    z-index: -1;
-}
-
-.back:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-position: 50% 0;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' id='my-svg' width='193' height='194' viewBox='0 0 193 194' fill='none'><rect x='1.52599' y='97.0613' width='134.581' height='134.581' rx='3.25' transform='rotate(-45 1.52599 97.0613)' stroke='%238B8B8B' stroke-width='1.5'/><path d='M90.7101 127.052V123.636H79.811V142.344L114.46 128.191V137.951H107.465V141.368H117.388V123.636L82.9018 137.301V127.052H90.7101Z' stroke='%238B8B8B' stroke-width='1.5'/><path d='M65.6162 61.7031H89.176C91.7675 67.9857 102.159 72.145 108.966 61.7031H131.584' stroke='%238B8B8B' stroke-width='1.5'/><path d='M98.5996 73.6545V122.423' stroke='%238B8B8B' stroke-width='1.5'/><circle cx='98.8354' cy='53.9484' r='2.1684' fill='%238B8B8B'/><path d='M51.591 96.6649L65.5795 69.8733L83.1245 103.304M83.1245 103.304L44.5967 104.015C46.6515 108.362 53.3929 117.15 63.9198 117.529C74.4468 117.909 81.1092 107.966 83.1245 103.304Z' stroke='%238B8B8B' stroke-width='1.5'/><path d='M117.248 96.6649L131.236 69.8733L148.781 103.304M148.781 103.304L110.253 104.015C112.308 108.362 119.05 117.15 129.577 117.529C140.104 117.909 146.766 107.966 148.781 103.304Z' stroke='%238B8B8B' stroke-width='1.5'/></svg>");
-    background-repeat: repeat;
-    opacity: .1;
-}
 
 
-svg {
-    stroke-width: 3px;
-    stroke-dasharray: 149;
-    animation: path 2s linear forwards;
-  }
-  
-   @keyframes path {
-      0% {
-        stroke-dashoffset: 149;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
-    }
 
 
 .hero__bg {
     position: absolute;
-    /* top: 40; */
     right: 0;
     z-index: -1;
     background-size: cover;
@@ -183,14 +150,16 @@ svg {
 }
 
 
-.item__list {
-    width: 240px;
-    height: 240px;
-    background-image: url('../src/img/marketing/ellipse.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+
+
+.name svg:nth-child(even) {
+    margin-top: -100px;
+}
+
+
+
+.back {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #1F1F1F;
+    z-index: -1;
 }
