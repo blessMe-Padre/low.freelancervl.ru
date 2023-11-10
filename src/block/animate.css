@@ -1,0 +1,124 @@
+
+/* Анимация прорисовки для логотипа */
+.animate path {
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000; 
+    animation: draw 7s forwards;
+    stroke-width: 3.5;
+    stroke-opacity: .35;
+} 
+
+@keyframes draw {
+to {
+    stroke-dashoffset: 0; 
+}
+}
+
+/* Анимация прорисовки для прямоугольника */
+.animate rect {
+    fill: none; 
+    stroke-width: 3.5;
+    stroke-dasharray: 700; 
+    stroke-dashoffset: 700; 
+    animation: drawRect 3s forwards; 
+  }
+  
+  @keyframes drawRect {
+    to {
+      stroke-dashoffset: 0; 
+    }
+  }
+
+/* Анимация пояления вектора */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+#my-svg2 {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+#my-svg2 path {
+    stroke-dasharray: 1500; 
+    stroke-dashoffset: 1500; 
+    animation: drawPath 3s forwards; 
+  }
+  
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0; 
+    }
+}
+
+
+/* Анимация прорисовки для 2 пути */
+@keyframes fadeIn2 {
+0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+}
+100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+}
+
+#rect2 {
+    animation: fadeIn2 1s ease-in forwards;
+}
+
+
+#rect2 path {
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000;
+    animation: drawPath 3s forwards; 
+  }
+  
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+/* Анимация прорисовки для 3 пути */
+@keyframes fadeIn3 {
+0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+}
+100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+}
+
+#rect3 {
+    animation: fadeIn3 1s ease-in forwards;
+}
+
+  /* Анимация прорисовки для пути */
+#rect3 path {
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000;
+    animation: drawPath 3s forwards; 
+  }
+  
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
