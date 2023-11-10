@@ -13,9 +13,19 @@
 </head>
 
 <body>
-
+    <!--[if lt IE 10]>
+        <div id="old-browser">
+            <div class="info">Вы используете устаревшую версию браузера. <br> Обновите
+                Ваш браузер или установите нормальный и современный<br>
+                <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a><br>
+                <a href="https://www.mozilla.org/ru/firefox/new/">Mozilla Firefox</a><br>
+                <a href="http://www.opera.com/ru/computer/windows">Opera</a><br>
+                для лучшего отображения данного сайта.
+            </div>
+        </div>
+    <![endif]-->
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
-        <header class="z-10 w-full transition-colors fixed">
+        <header class="z-10 w-full transition-colors fixed lock-padding">
             <span class="absolute top-7 left-7 sm:hidden"><img src="./src/img/logo.png" alt="логотип" /></span>
             <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
 
@@ -328,11 +338,6 @@
                     </g>
                 </g>
             </svg>
-
-
-            <script>
-                new Vivus('my-svg', { duration: 200 }, myCallback);
-            </script>
 
             <div class="container">
                 <div></div>
