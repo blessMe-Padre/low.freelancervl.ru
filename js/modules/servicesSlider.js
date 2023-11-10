@@ -2,7 +2,7 @@ export const initServiceSlider = () => {
 
     const exclusiveSlider1 = document.querySelector('.services-swiper');
 
-    console.log(window.innerWidth)
+    console.log(window.innerWidth);
 
     if (exclusiveSlider1) {
         const sliderItems1 = document.querySelectorAll('.swiper-item1');
@@ -37,7 +37,7 @@ export const initServiceSlider = () => {
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
-                  }
+                }
             });
         };
 

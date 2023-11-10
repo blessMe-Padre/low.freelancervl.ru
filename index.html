@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- строчка -->
+
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
         <header class="z-10 w-full transition-colors fixed">
             <span class="absolute top-7 left-7 sm:hidden"><img src="./src/img/logo.png" alt="логотип" /></span>
@@ -106,64 +106,22 @@
                         </h2>
                         <h1 class=" hero__title text-7xl uppercase font-semibold">Юристы, которые <br> реально решают
                             <br>проблемы
-                            </p>
+                        </h1>
 
-                            <div class="flex justify-between items-end mt-20 overflow-hidden">
-                                <div class="flex flex-row gap-16 md:flex-row">
-                                    <div class="flex flex-col hero-item hero-item-1">
-                                        <div class="overflow-hidden">
-                                            <img class="person__img rounded-full hero-item-img"
-                                                src="./src/img/person_1.png" alt="человек 1" width="210">
-                                        </div>
-                                        <p class="text-xl uppercase">Дмитрий Соколов</p>
-
-                                        <div class="hero-item__wrapper hero-swiper overflow-hidden">
-                                            <ul class="hero-item__list swiper-wrapper w-0 min-w-[100%]">
-                                                <li class="swiper-slide hero-item__item ">
-                                                    <div class="flex h-full flex-col justify-between">
-                                                        <p class="text-base">Выплата компенсации в размере 750 000
-                                                            рублей
-                                                            Клиенту,
-                                                            пострадавшему в
-                                                            результате несчастного случая на стройке</p>
-                                                        <a class="text-base block" href="#">Подробнее</a>
-                                                    </div>
-
-                                                    <img src="./src/img/hero-thumb.png" width="127" height="165"
-                                                        alt="thumb">
-                                                </li>
-
-                                                <li class="swiper-slide hero-item__item ">
-                                                    <div class="flex h-full flex-col justify-between">
-                                                        <p class="text-base">Выплата компенсации в размере 750 000
-                                                            рублей
-                                                            Клиенту,
-                                                            пострадавшему в
-                                                            результате несчастного случая на стройке</p>
-                                                        <a class="text-base block" href="#">Подробнее</a>
-                                                    </div>
-
-                                                    <img src="./src/img/hero-thumb.png" width="127" height="165"
-                                                        alt="thumb">
-                                                </li>
-                                            </ul>
-                                            <!-- If we need navigation buttons -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
+                        <div class="flex justify-between items-end mt-20 max-w-[100%] relative">
+                            <div class="flex flex-row gap-16 md:flex-row">
+                                <div class="flex flex-col hero-item hero-item-1">
+                                    <div class="overflow-hidden">
+                                        <img class="person__img rounded-full hero-item-img" src="./src/img/person_1.png"
+                                            alt="человек 1" width="210">
                                     </div>
+                                    <p class="text-xl uppercase">Дмитрий Соколов</p>
 
-                                    <div class="flex flex-col hero-item hero-item-2">
-                                        <div class="overflow-hidden">
-                                            <img class="person__img rounded-full hero-item-img-2"
-                                                src="./src/img/person_2.png" alt="человек 2" width="210">
-                                        </div>
-                                        <p class="text-xl uppercase">Дарья Коренева</p>
-
-                                        <div class="hero-item__wrapper">
-                                            <ul class="hero-item__list">
-                                                <li class="hero-item__item">
-                                                    <div class="flex h-full flex-col justify-between">
+                                    <div class="hero-item__wrapper overflow-hidden hero-item__wrapper-1">
+                                        <div class="hero-swiper">
+                                            <ul class="hero-item__list swiper-wrapper">
+                                                <li class="swiper-slide hero-item__item">
+                                                    <div class="flex flex-col justify-between">
                                                         <p class="text-base">Выплата компенсации в размере 750 000
                                                             рублей
                                                             Клиенту,
@@ -175,13 +133,12 @@
                                                     <img src="./src/img/hero-thumb.png" width="127" height="165"
                                                         alt="thumb">
                                                 </li>
-                                                <li class="hero-item__item">
-                                                    <div class="flex h-full flex-col justify-between">
-                                                        <p class="text-base">Выплата компенсации в размере 750 000
-                                                            рублей
-                                                            Клиенту,
-                                                            пострадавшему в
-                                                            результате несчастного случая на стройке</p>
+
+                                                <li class="swiper-slide hero-item__item">
+                                                    <div class="flex flex-col justify-between">
+                                                        <p class="text-base">ЮРИСТЫ, КОТОРЫЕ
+                                                            РЕАЛЬНО РЕШАЮТ
+                                                            ПРОБЛЕМЫ</p>
                                                         <a class="text-base block" href="#">Подробнее</a>
                                                     </div>
 
@@ -190,13 +147,60 @@
                                                 </li>
                                             </ul>
                                         </div>
+
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-wrap gap-10 items-center mt-6">
-                                <a href="#" class="link">Записаться на консультацию</a>
+                                <div class="flex flex-col hero-item hero-item-2">
+                                    <div class="overflow-hidden">
+                                        <img class="person__img rounded-full hero-item-img-2"
+                                            src="./src/img/person_2.png" alt="человек 2" width="210">
+                                    </div>
+                                    <p class="text-xl uppercase">Дарья Коренева</p>
+                                    <div class="hero-item__wrapper overflow-hidden hero-item__wrapper-2">
+                                        <div class="hero-swiper-2">
+                                            <ul class="hero-item__list swiper-wrapper">
+                                                <li class="swiper-slide hero-item__item">
+                                                    <div class="flex flex-col justify-between">
+                                                        <p class="text-base">Выплата компенсации в размере 750 000
+                                                            рублей
+                                                            Клиенту,
+                                                            пострадавшему в
+                                                            результате несчастного случая на стройке</p>
+                                                        <a class="text-base block" href="#">Подробнее</a>
+                                                    </div>
+
+                                                    <img src="./src/img/hero-thumb.png" width="127" height="165"
+                                                        alt="thumb">
+                                                </li>
+
+                                                <li class="swiper-slide hero-item__item">
+                                                    <div class="flex flex-col justify-between">
+                                                        <p class="text-base">ЮРИСТЫ, КОТОРЫЕ
+                                                            РЕАЛЬНО РЕШАЮТ
+                                                            ПРОБЛЕМЫ</p>
+                                                        <a class="text-base block" href="#">Подробнее</a>
+                                                    </div>
+
+                                                    <img src="./src/img/hero-thumb.png" width="127" height="165"
+                                                        alt="thumb">
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-10 items-center mt-6">
+                            <a href="#" class="link">Записаться на консультацию</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -301,25 +305,35 @@
                 </div>
             </section>
 
-            <svg id="my-svg" width="193" height="194" viewBox="0 0 193 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="my-svg" width="193" height="194" viewBox="0 0 193 194" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g id="logo">
-                <rect id="Rectangle 36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5"/>
-                <g id="logo_2">
-                <path id="Vector 107" d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z" stroke="#8B8B8B" stroke-width="1.5"/>
-                <path id="Vector 107_2" d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658" stroke="#8B8B8B" stroke-width="1.5"/>
-                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B" stroke-width="1.5"/>
-                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B"/>
-                <path id="Vector 109" d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z" stroke="#8B8B8B" stroke-width="1.5"/>
-                <path id="Vector 110" d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z" stroke="#8B8B8B" stroke-width="1.5"/>
-                </g>
+                    <rect id="Rectangle 36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                        transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                    <g id="logo_2">
+                        <path id="Vector 107"
+                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                            stroke="#8B8B8B" stroke-width="1.5" />
+                        <path id="Vector 107_2"
+                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                            stroke="#8B8B8B" stroke-width="1.5" />
+                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B" stroke-width="1.5" />
+                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                        <path id="Vector 109"
+                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                            stroke="#8B8B8B" stroke-width="1.5" />
+                        <path id="Vector 110"
+                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                            stroke="#8B8B8B" stroke-width="1.5" />
+                    </g>
                 </g>
             </svg>
-                
 
-       <script>
-            new Vivus('my-svg', { duration: 200 }, myCallback);
-        </script>
-        
+
+            <script>
+                new Vivus('my-svg', { duration: 200 }, myCallback);
+            </script>
+
             <div class="container">
                 <div></div>
                 <section class="sectionPin">

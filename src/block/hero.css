@@ -26,6 +26,15 @@
     z-index: 9999;
 }
 
+.hero-item__wrapper-1 {
+    width: 70vw;
+}
+
+.hero-item__wrapper-2 {
+    width: 60vw;
+}
+
+
 .hero-item__list {
     display: flex;
 }
@@ -50,4 +59,32 @@
 
 .hero-item__item a {
     color: #FA842B;
+}
+
+@media(max-width: 767px) {
+    .hero-item__wrapper {
+        top: 200px;
+        left: 0;
+        width: 100%;
+    }
+
+    .hero-item__item {
+        padding: 10px;
+        font-size: 12px !important;
+    }
+
+    .hero-item__wrapper-1 {
+        width: 90vw;
+    }
+
+    .hero-item__wrapper-2 {
+        width: 90vw;
+        left: -270px;
+    }
+}
+
+@media(max-width: 1280px) {
+    .hero-item__wrapper-2 {
+        width: 50vw;
+    }
 }
