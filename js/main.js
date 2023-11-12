@@ -6,11 +6,11 @@ import { initServiceSlider } from './modules/servicesSlider.js'
 import { initHeroSlider } from './modules/hero-slider.js';
 
 import { initPopup } from './modules/popup.js';
+import { initPinWrap } from './modules/pin-wrap.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
-    console.log(window.innerWidth);
     iniStickyHeader();
     initSertificateSlider();
     cookieConsentChecker();
@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initObserver();
     initPopup();
+    initPinWrap();
 
 
     const body = document.querySelector('body');

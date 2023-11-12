@@ -839,69 +839,48 @@ button.swiper-pagination-bullet{
   overflow:hidden
 }
 
-@media (min-width: 1023px) {
-  @supports(animation-timeline: view()) {
-    @keyframes move {
-      to {
-        /* Move horizontally so that right edge is aligned against the viewport */
-        transform: translateX(calc(-100% + 100vw));
-        left: 0px;
-      }
-    }
+.sectionPin {
+  height: 500vh;
+  overflow: visible
+}
 
-    .sectionPin {
-      /* Stretch it out, so that we create room for the horizontal scroll animation */
-      height: 500vh;
-      overflow: visible;
-      /* To make position sticky work … */
-      view-timeline-name: --section-pin-tl;
-      view-timeline-axis: block;
-    }
+.pin-wrap-sticky {
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden
+}
 
-    .pin-wrap-sticky {
-      /* Stick to Top */
-      height: 100vh;
-      position: sticky;
-      top: 0;
-      width: 100vw;
-      overflow-x: hidden;
-    }
+.pin-wrap {
+  height: 100vh;
+  width: 250vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
 
-    .pin-wrap {
-      display: flex;
-      height: 100vh;
-      width: 280vmax;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 70px 10vw;
-      gap: 80px;
-      /* Hook animation */
-      will-change: transform;
-      animation: linear move forwards;
-      /* Link animation to view-timeline */
-      animation-timeline: --section-pin-tl;
-      animation-range: contain 0% contain 100%;
-    }
+.pin-wrap-item {
+  padding: 50px;
+  background: rgba(67, 67, 67, 0.20);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
 
-    .pin-wrap img {
-      max-height: 400px;
-    }
+.pin-wrap-item__wrapper {
+  position: relative;
+  padding-left: 50px;
+}
 
-    .pin-wrap-item {
-      position: relative;
-      padding-left: 30px;
-    }
-
-    .pin-wrap-item::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background-color: #FA842B;
-    }
-  }
+.pin-wrap-item__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #FA842B;
 }
 
 /* tabs start */
@@ -2335,6 +2314,10 @@ body {
   height: 100vh;
 }
 
+.h-\[450px\]{
+  height: 450px;
+}
+
 .max-h-\[600px\]{
   max-height: 600px;
 }
@@ -2378,6 +2361,11 @@ body {
 
 .-translate-y-2\/4{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2\/4{
+  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
