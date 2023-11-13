@@ -51,7 +51,7 @@ to {
     stroke-dasharray: 1500; 
     stroke-dashoffset: 1500; 
     animation: drawPath 3s forwards; 
-    animation-delay: 2s;
+    animation-delay: 5s;
   }
   
 @keyframes drawPath {
@@ -85,7 +85,7 @@ to {
     stroke-dasharray: 1000; 
     stroke-dashoffset: 1000;
     animation: drawPath 3s forwards; 
-    animation-delay: 3s;
+    animation-delay: 6s;
   }
   
   @keyframes drawPath {
@@ -118,7 +118,7 @@ to {
     stroke-dasharray: 1000; 
     stroke-dashoffset: 1000;
     animation: drawPath 3s forwards; 
-    animation-delay: 4s;
+    animation-delay: 7s;
   }
   
   @keyframes drawPath {
