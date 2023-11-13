@@ -17,7 +17,7 @@ to {
 /* Анимация прорисовки для прямоугольника */
 .animate rect {
     fill: none; 
-    stroke-width: 3.5;
+    stroke-width: 2.5;
     stroke-dasharray: 700; 
     stroke-dashoffset: 700; 
     animation: drawRect 3s forwards; 
@@ -51,6 +51,7 @@ to {
     stroke-dasharray: 1500; 
     stroke-dashoffset: 1500; 
     animation: drawPath 3s forwards; 
+    animation-delay: 2s;
   }
   
 @keyframes drawPath {
@@ -76,6 +77,7 @@ to {
 
 #rect2 {
     animation: fadeIn2 1s ease-in forwards;
+    
 }
 
 
@@ -83,6 +85,7 @@ to {
     stroke-dasharray: 1000; 
     stroke-dashoffset: 1000;
     animation: drawPath 3s forwards; 
+    animation-delay: 3s;
   }
   
   @keyframes drawPath {
@@ -115,10 +118,19 @@ to {
     stroke-dasharray: 1000; 
     stroke-dashoffset: 1000;
     animation: drawPath 3s forwards; 
+    animation-delay: 4s;
   }
   
   @keyframes drawPath {
     to {
       stroke-dashoffset: 0;
+    }
+  }
+
+
+  @media(max-width: 767px) {
+    svg {
+      width: 110px;
+      padding: 9px;
     }
   }

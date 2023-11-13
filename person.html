@@ -12,58 +12,63 @@
 </head>
 
 <body>
-    <!--[if lt IE 10]>
-        <div id="old-browser">
-            <div class="info">Вы используете устаревшую версию браузера. <br> Обновите
-                Ваш браузер или установите нормальный и современный<br>
-                <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a><br>
-                <a href="https://www.mozilla.org/ru/firefox/new/">Mozilla Firefox</a><br>
-                <a href="http://www.opera.com/ru/computer/windows">Opera</a><br>
-                для лучшего отображения данного сайта.
-            </div>
-        </div>
-    <![endif]-->
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
-        <header class="z-10 w-full transition-colors lock-padding">
-            <span class="absolute top-7 left-7 sm:hidden">ЛОГОТИП</span>
+        <header class="z-10 w-full transition-colors fixed lock-padding">
+            <span class="absolute top-7 left-7 sm:hidden"><img src="./src/img/logo.png" alt="логотип" /></span>
             <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
-                <!-- <img class="h-24" loading="lazy" src="./src/img/logo.jpg" width="228" height="98" alt="лого"> -->
-                <a href="/"><span>
-                        <img src="./src/img/logo.png" alt="logo" />
-                    </span><a>
-                        <ul class="flex gap-2 flex-wrap text-main-black">
-                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
-                                    data-goto=".page-section-1">Ссылка 1</a></li>
-                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
-                                    data-goto=".page-section-2">Ссылка 2</a></li>
-                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
-                                    data-goto=".page-section-3">Ссылка 3</a></li>
-                            <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
-                                    data-goto=".page-section-4">Ссылка 4</a></li>
-                        </ul>
-                        <a class="header-call-button" href="#">Записаться</a>
+
+                <div class="flex justify-center items-center gap-4">
+                    <img src="./src/img/logo.png" alt="логотип">
+                </div>
+
+
+                <ul class="flex gap-2 flex-wrap text-main-black">
+                    <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#page-section-1"
+                            data-goto=".page-section-1">Специалист</a></li>
+                    <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                            data-goto=".page-section-2">Результаты дел</a></li>
+                    <li class="mr-4"><a class="text-white hover:text-orange transition-colors nav-link" href="#"
+                            data-goto=".page-section-3">Контакты</a></li>
+           
+                </ul>
+
+                <div class="flex items-center justify-center gap-4">
+                    <span class="">Позвоните нам для получения <br><span class="text-orange">бесплатной
+                            консультации</span></span>
+
+                    <a class="font-bold text-lg text-white whitespace-nowrap" href="tel:+79021253645">+7 (902)
+                        125-36-45</a>
+                </div>
+
             </div>
 
             <!-- мобильное меню -->
-            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
-                <!-- <img loading="lazy" class="absolute top-5 left-5" src="./src/img/logo.jpg" width="114" height="48"
-                    alt="лого"> -->
-                <div class="mobile-menu bg-orange">
-                    <span>ЛОГОТИП</span>
+            <div class="flex flex-col items-center justify-between pt-20 overflow-hidden md:hidden">
+
+                <nav class="mobile-menu bg-orange bg-opacity-95">
                     <ul class="flex flex-col pb-11 text-main-black pt-4">
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
-                                href="#" data-goto=".page-section-1">Ссылка 1</a>
+                                href="#" data-goto=".page-section-1">Специалист</a>
                         </li>
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
-                                href="#" data-goto=".page-section-2">Ссылка 2</a>
+                                href="#" data-goto=".page-section-2">Результаты дел</a>
                         </li>
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
-                                href="#" data-goto=".page-section-3">Ссылка 3</a></li>
-                        <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
-                                href="#" data-goto=".page-section-4">Ссылка 4</a></li>
-                    </ul>
-                    <a class="header-call-button block w-full mx-3" href="#">Записаться</a>
+                                href="#" data-goto=".page-section-3">Контакты</a></li>
+                </nav>
+                <div class="container">
+                    <div class="flex justify-between items-center gap-4">
+                        <div class="flex">
+                            <span class="">Позвоните нам для получения <br><span class="text-orange">бесплатной
+                                    консультации</span></span>
+                        </div>
+                        <div>
+                            <a class="font-bold text-lg text-white whitespace-nowrap" href="tel:+79021253645">+7 (902) 125-36-45</a>
+                        </div>
+                    </div>
                 </div>
+
+
 
                 <button class="btn-close-menu md:hidden absolute top-5 right-5">
                     <svg viewBox="0 0 64 48">
@@ -72,11 +77,13 @@
                         <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
                     </svg>
                 </button>
+
+
             </div>
         </header>
 
         <main class="wrapper">
-            <section class="person py-10 pt-12 relative">
+            <section class="person py-10 pt-12 relative page-section-1">
                 <img class="sm:absolute -z-10" width="1550" height="750" src="./src/img/person/person-hero.webp"
                     alt="персона-1">
                 <div class="container">
@@ -105,7 +112,7 @@
 
             
 
-            <section class="person-cases py-16  sm:py-24">
+            <section class="person-cases py-16 sm:py-24 page-section-2">
                 <div class="container">
                     <h2 class="text-2xl sm:text-7xl uppercase font-droidFontRegular font-bold mb-5 sm:mb-10">Результаты
                         рассмотрения
@@ -176,7 +183,7 @@
                 </div>
             </section>
 
-            <section class="contacts py-10 relative">
+            <section class="contacts py-10 relative page-section-4">
                 <img class="absolute top-0 left-0 w-full h-full object-cover -z-10" src="./src/img/form-bg.webp">
                 <div class="container">
                     <div class="contacts__wrapper">
@@ -273,7 +280,7 @@
 
         </main>
 
-        <footer class="footer py-10">
+        <footer class="footer py-10 page-section-3">
             <div class="container">
                 <div class="footer__wrapper flex flex-wrap justify-between gap-5">
                     <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">

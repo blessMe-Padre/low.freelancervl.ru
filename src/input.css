@@ -150,8 +150,6 @@
 }
 
 
-
-
 .name svg:nth-child(even) {
     margin-top: -100px;
 }
@@ -163,3 +161,20 @@
     background-color: #1F1F1F;
     z-index: -1;
 }
+
+.back:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 0;
+    background-image: url('./img/logo.svg');
+    background-repeat: repeat;
+    opacity: .01;
+}
+
+
+

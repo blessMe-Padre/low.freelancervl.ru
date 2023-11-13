@@ -60,7 +60,7 @@
             <!-- мобильное меню -->
             <div class="flex flex-col items-center justify-between pt-20 overflow-hidden md:hidden">
 
-                <nav class="mobile-menu bg-orange">
+                <nav class="mobile-menu bg-orange bg-opacity-95">
                     <ul class="flex flex-col pb-11 text-main-black pt-4">
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
                                 href="#" data-goto=".page-section-1">Специалисты</a>
@@ -76,8 +76,6 @@
                                 href="#" data-goto=".page-section-5">Контакты</a></li>
                     </ul>
 
-                    <a class="header-call-button block w-full mx-3" href="#">Записаться</a>
-
                 </nav>
                 <div class="container">
                     <div class="flex justify-between items-center gap-4">
@@ -86,7 +84,7 @@
                                     консультации</span></span>
                         </div>
                         <div class="">
-                            <a class="font-bold text-lg text-white" href="tel:+79021253645">+7 (902) 125-36-45</a>
+                            <a class="font-bold text-white whitespace-nowrap text-lg" href="tel:+79021253645">+7 (902) 125-36-45</a>
                         </div>
                     </div>
                 </div>
@@ -217,12 +215,84 @@
                 </div>
             </section>
 
-            <section class="back page-section-2 svg-animate">
-                <div class="relative -z-10 h-[300px]">
-
-                    <div
-                        class="absolute t-0 left-0 w-full h-[300px] grid-cols-8 bg-repeat bg-cover sm:hidden lg:grid name overflow-hidden">
-
+            <section class="back page-section-2 svg-animate ">
+                <div class="relative -z-10 h-[300px]">                    
+                    <div class="absolute t-0 left-0 w-full h-[300px] grid-cols-8 grid name overflow-hidden">
+                        <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="logo">
+                                <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                    rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <g id="logo_2">
+                                    <path id="Vector 107"
+                                        d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 107_2"
+                                        d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                    <path id="Vector 109"
+                                        d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 110"
+                                        d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="logo">
+                                <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                    rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <g id="logo_2">
+                                    <path id="Vector 107"
+                                        d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 107_2"
+                                        d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                    <path id="Vector 109"
+                                        d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 110"
+                                        d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="logo">
+                                <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                    rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <g id="logo_2">
+                                    <path id="Vector 107"
+                                        d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 107_2"
+                                        d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                    <path id="Vector 109"
+                                        d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                    <path id="Vector 110"
+                                        d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                        stroke="#8B8B8B" stroke-width="1.5" />
+                                </g>
+                            </g>
+                        </svg>
                         <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="logo">
@@ -828,7 +898,7 @@
                 </div>
 
                 <div class="container -mt-[300px]">
-                    <ul class="flex items-center justify-center gap-10 pt-93 h-80 relative flex-wrap">
+                    <ul class="flex items-center justify-between gap-10 pt-93 h-80 relative flex-wrap">
                         <li>
                             <img src="./src/img/Vector_113.svg" alt="вектор 1">
                             <div class="uppercase text-orange font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
@@ -944,10 +1014,15 @@
                     </div>
                 </div>
             </section>
-            <div class="container">
-                <section class="sectionPin">
-                    <div class="pin-wrap-sticky ">
-                        <div class="pin-wrap">
+        
+            
+            <div class="container flex items-start justify-center">
+                <section class="sectionPin relative svg-animate-3 ">
+
+                    <div class="pin-wrap-sticky">
+                        <div class="pin-wrap ">
+
+                            
                             <div class="max-w-lg">
                                 <h2 class="text-2xl sm:text-3xl font-droidFontRegular font-bold uppercase mb-5">Чтобы
                                     узнать больше
@@ -956,54 +1031,689 @@
                                     href="tel:+79021253645">+7
                                     (902) 125-36-45</a>
                             </div>
+
                             <div class="max-w-3xl pin-wrap-item mb-5">
-                                <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
-                                    всего</h3>
-                                <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу означает
-                                    наличие
-                                    адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по всему
-                                    Приморскому краю. Это означает, что у вас есть команда с проверенными результатами и
-                                    подробными знаниями, способная привести самые веские аргументы в вашу защиту, будь
-                                    то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
-                                    присяжных в своей невиновности совершении преступления.</p>
+                                <div class="pin-wrap-item__wrapper">
+                                    <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
+                                        всего</h3>
+                                    <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу
+                                        означает
+                                        наличие
+                                        адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по
+                                        всему
+                                        Приморскому краю. Это означает, что у вас есть команда с проверенными
+                                        результатами и
+                                        подробными знаниями, способная привести самые веские аргументы в вашу защиту,
+                                        будь
+                                        то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
+                                        присяжных в своей невиновности совершении преступления.</p>
+                                </div>
                             </div>
+
                             <div class="max-w-3xl pin-wrap-item mb-5">
-                                <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
-                                    всего</h3>
-                                <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу означает
-                                    наличие
-                                    адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по всему
-                                    Приморскому краю. Это означает, что у вас есть команда с проверенными результатами и
-                                    подробными знаниями, способная привести самые веские аргументы в вашу защиту, будь
-                                    то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
-                                    присяжных в своей невиновности совершении преступления.</p>
+                                <div class="pin-wrap-item__wrapper">
+                                    <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
+                                        всего</h3>
+                                    <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу
+                                        означает
+                                        наличие
+                                        адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по
+                                        всему
+                                        Приморскому краю. Это означает, что у вас есть команда с проверенными
+                                        результатами и
+                                        подробными знаниями, способная привести самые веские аргументы в вашу защиту,
+                                        будь
+                                        то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
+                                        присяжных в своей невиновности совершении преступления.</p>
+                                </div>
                             </div>
+
                             <div class="max-w-3xl pin-wrap-item mb-5">
-                                <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
-                                    всего</h3>
-                                <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу означает
-                                    наличие
-                                    адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по всему
-                                    Приморскому краю. Это означает, что у вас есть команда с проверенными результатами и
-                                    подробными знаниями, способная привести самые веские аргументы в вашу защиту, будь
-                                    то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
-                                    присяжных в своей невиновности совершении преступления.</p>
+                                <div class="pin-wrap-item__wrapper">
+                                    <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
+                                        всего</h3>
+                                    <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу
+                                        означает
+                                        наличие
+                                        адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по
+                                        всему
+                                        Приморскому краю. Это означает, что у вас есть команда с проверенными
+                                        результатами и
+                                        подробными знаниями, способная привести самые веские аргументы в вашу защиту,
+                                        будь
+                                        то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
+                                        присяжных в своей невиновности совершении преступления.</p>
+                                </div>
                             </div>
+
                             <div class="max-w-3xl pin-wrap-item mb-5">
-                                <h3 class="text-sm sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
-                                    всего</h3>
-                                <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу означает
-                                    наличие
-                                    адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по всему
-                                    Приморскому краю. Это означает, что у вас есть команда с проверенными результатами и
-                                    подробными знаниями, способная привести самые веские аргументы в вашу защиту, будь
-                                    то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
-                                    присяжных в своей невиновности совершении преступления.</p>
+                                <div class="pin-wrap-item__wrapper">
+                                    <h3 class="text-2xl sm:text-3xl font-bold uppercase text-orange mb-5">Опыт - важнее
+                                        всего</h3>
+                                    <p class="text-sm sm:text-lg">Получение наилучшего результата по вашему делу
+                                        означает
+                                        наличие
+                                        адвокатов с опытом работы в местных судах. У нас есть опыт работы с судами по
+                                        всему
+                                        Приморскому краю. Это означает, что у вас есть команда с проверенными
+                                        результатами и
+                                        подробными знаниями, способная привести самые веские аргументы в вашу защиту,
+                                        будь
+                                        то для того, чтобы вы могли получить компенсацию за травму или вам нужно убедить
+                                        присяжных в своей невиновности совершении преступления.</p>
+                                </div>
                             </div>
                         </div>
+
+                        <div
+                            class="hidden absolute top-2/4 -translate-y-2/4 left-0 w-full h-[450px] grid-cols-8 bg-repeat bg-cover sm:hidden lg:grid name overflow-hidden">
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="pt-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="logo">
+                                    <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581"
+                                        rx="3.25" transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B"
+                                        stroke-width="1.5" />
+                                    <g id="logo_2">
+                                        <path id="Vector 107"
+                                            d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 107_2"
+                                            d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                            stroke-width="1.5" />
+                                        <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                        <path id="Vector 109"
+                                            d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                        <path id="Vector 110"
+                                            d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                            stroke="#8B8B8B" stroke-width="1.5" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
                     </div>
                 </section>
             </div>
+
 
             <section class="services py-10 mb-20 w-0 min-w-[100%] overflow-hidden page-section-3">
                 <div class="container">
@@ -1018,10 +1728,10 @@
 
                     <div class="services-swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-item1 relative">
+                            <div class="swiper-item1 relative p-5">
                                 <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5 ">Представительство в
                                     судах. Ведение переговоров</h2>
-                                <ul>
+                                <ul class="list-disc">
                                     <li>Представляем интересы доверителей во всех судах и регионах Российской Федерации.
                                     </li>
                                     <li>Имеем опыт участия в судах города Москвы и Санкт-Петербурга, в том числе в
@@ -1036,10 +1746,10 @@
                                     alt="единица">
                             </div>
 
-                            <div class="swiper-item1 relative">
+                            <div class="swiper-item1 relative p-5">
                                 <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Арбитражные судебные
                                     споры</h2>
-                                <ul>
+                                <ul class="list-disc">
                                     <li>Занимаясь бизнесом, мы неизменно сталкиваемся с различными сложностями
                                         юридического характера, проще всего решить которые, обратившись к адвокату по
                                         арбитражным спорам. Если дело дошло до суда, то в подобном случае экономить на
@@ -1053,10 +1763,10 @@
                                     alt="двоечка">
                             </div>
 
-                            <div class="swiper-item1 relative">
+                            <div class="swiper-item1 relative p-5">
                                 <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Ведение уголовных дел.
                                     Адвокат</h2>
-                                <ul>
+                                <ul class="list-disc">
                                     <li>Когда Вы подверглись преследованию со стороны правоохранительных органов либо
                                         стали потерпевшим, то незамедлительно следует обратиться за правовой помощью к
                                         адвокату, который специализируется на уголовных делах.</li>
@@ -1067,10 +1777,10 @@
                                     alt="троечка">
                             </div>
 
-                            <div class="swiper-item1 relative">
+                            <div class="swiper-item1 relative p-5">
                                 <h2 class="text-orange sm:text-base md:text-lg font-bold mb-5">Решение брачно-семейных
                                     вопросов</h2>
-                                <ul>
+                                <ul class="list-disc">
                                     <li>Решение Ваших брачно-семейных вопросов: расторжение брака, раздел совместно
                                         нажитого имущества, взыскание алиментов, лишение родительских прав, определение
                                         места жительства ребёнка, определение порядка общения с ребёнком.</li>
@@ -1085,11 +1795,372 @@
                 </div>
             </section>
 
-            <section class="clients page-section-4 svg-animate-2">
+            <section class="back clients page-section-4 svg-animate-2 lg:h-[560px] sm:h-[600px]">
 
                 <div
-                    class="absolute t-0 left-0 w-full h-auto grid-cols-8 bg-repeat bg-cover sm:hidden lg:grid name overflow-hidden">
+                    class="absolute top-0 left-0 w-full grid-cols-8 grid name sm:overflow-hidden -z-10 sm:h-[600px] lg:h-[560px]">
+                    <!-- class="absolute t-0 left-0 w-full h-[560] grid-cols-8 grid name overflow-hidden" -->
 
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo">
+                            <rect id="Rectangle_36" x="1.6007" y="96.9273" width="134.581" height="134.581" rx="3.25"
+                                transform="rotate(-45 1.6007 96.9273)" stroke="#8B8B8B" stroke-width="1.5" />
+                            <g id="logo_2">
+                                <path id="Vector 107"
+                                    d="M90.7848 126.918V123.502H79.8857V142.21L114.535 128.057V137.817H107.54V141.234H117.463V123.502L82.9765 137.167V126.918H90.7848Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 107_2"
+                                    d="M65.6909 61.569H89.2507C91.8422 67.8516 102.234 72.0109 109.041 61.569H131.658"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 108" d="M98.6743 73.5205V122.289" stroke="#8B8B8B"
+                                    stroke-width="1.5" />
+                                <circle id="Ellipse 1" cx="98.9101" cy="53.8144" r="2.1684" fill="#8B8B8B" />
+                                <path id="Vector 109"
+                                    d="M51.6657 96.5308L65.6542 69.7392L83.1992 103.169M83.1992 103.169L44.6714 103.881C46.7262 108.227 53.4676 117.016 63.9945 117.395C74.5215 117.774 81.1839 107.832 83.1992 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                                <path id="Vector 110"
+                                    d="M117.322 96.5308L131.311 69.7392L148.856 103.169M148.856 103.169L110.328 103.881C112.383 108.227 119.124 117.016 129.651 117.395C140.178 117.774 146.841 107.832 148.856 103.169Z"
+                                    stroke="#8B8B8B" stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </svg>
                     <svg class="pb-5" id="my-svg" width="200" height="200" viewBox="0 0 193 193" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="logo">
@@ -1669,7 +2740,7 @@
                     </svg>
                 </div>
 
-                <div class="container">
+                <div class="container z-50">
                     <h2 class="md:text-4xl sm:text-sm mb-6 text-orange pt-5">Клиенты</h2>
 
                     <p class="md:text-6xl sm:text-2xl uppercase font-semibold mb-5">Нам доверяют <br>
@@ -1722,11 +2793,19 @@
 
                 </div>
             </section>
-
-            <section class="contacts py-10 relative page-section-5">
+            
+            <section class="contacts py-32 relative page-section-5">
                 <img class="absolute top-0 left-0 w-full h-full object-cover -z-10" src="./src/img/form-bg.webp">
-                <div class="container">
-                    <div class="contacts__wrapper">
+                
+                <div class="container ">
+
+                    <svg class="absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="40" height="130" viewBox="0 0 2 130" fill="none">
+                        <path d="M1 0V129.035" stroke="#FA842B" stroke-width="1.5" stroke-dasharray="130" stroke-dashoffset="130">
+                            <animate attributeName="stroke-dashoffset" dur="4s" from="130" to="0" begin="10s" fill="freeze" />
+                        </path>
+                    </svg>
+
+                    <div class="contacts__wrapper ">
                         <div class="contacts__descriptions">
                             <h2 class="contacts__title">Свяжитесь с нами для <span>бесплатной</span> оценки дела</h2>
                             <p class="contacts__text">Когда вы сталкиваетесь с юридической дилеммой, будь то иск
@@ -1768,7 +2847,7 @@
 
         </main>
 
-        <footer class="footer py-10">
+        <footer class="footer py-20">
             <div class="container">
                 <div class="footer__wrapper flex flex-wrap justify-between gap-5">
                     <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
