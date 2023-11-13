@@ -8,6 +8,7 @@ export const handleScroll = () => {
     const roundedTranslateXValue = Math.round(translateXValue * 100) / 100;
 
     $pinWrap.style.transform = `translateX(${roundedTranslateXValue}%)`;
+    $pinWrap.style.transition = 'transform 0.3s ease';
 };
 
 export const initPinWrap = () => {

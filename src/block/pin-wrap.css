@@ -43,11 +43,14 @@
    background-color: #FA842B;
 }
 
-@media(max-width:767px) {
+@media(max-width: 767px) {
     .pin-wrap {
         display: flex;
         flex-direction: column;
         width: auto;
+        height: auto;
+    }
+    .sectionPin {
         height: auto;
     }
 }

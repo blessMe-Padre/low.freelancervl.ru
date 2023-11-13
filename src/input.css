@@ -91,7 +91,7 @@
 }
 
 .header-fix {
-    background: rgba(38, 38, 38, 0.60);
+    background: rgba(38, 38, 38, .95);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
