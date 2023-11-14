@@ -121,6 +121,7 @@
     }
     .popup__btn {
         right: 30px;
+        color: #ffffff;
     }
     .popup__text {
         font-size: 12px;
