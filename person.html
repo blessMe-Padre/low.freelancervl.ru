@@ -45,7 +45,7 @@
             <!-- мобильное меню -->
             <div class="flex flex-col items-center justify-between pt-20 overflow-hidden md:hidden">
 
-                <nav class="mobile-menu bg-orange bg-opacity-95">
+                <nav class="mobile-menu bg-orange bg-opacity-95 z-50">
                     <ul class="flex flex-col pb-11 text-main-black pt-4">
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
                                 href="#" data-goto=".page-section-1">Специалист</a>
@@ -55,15 +55,17 @@
                         </li>
                         <li class="px-4 mb-4"><a class="text-white hover:text-orange transition-colors nav-link"
                                 href="#" data-goto=".page-section-3">Контакты</a></li>
+                    </ul>
+
                 </nav>
-                <div class="container">
+                <div class="container wow fadeInUp" data-wow-delay="0.4s"">
                     <div class="flex justify-between items-center gap-4">
                         <div class="flex">
-                            <span class="">Позвоните нам для получения <br><span class="text-orange">бесплатной
+                            <span class="md:text-lg text-xs">Позвоните нам для получения <br><span class="text-orange md:text-lg sm:text-base">бесплатной
                                     консультации</span></span>
                         </div>
                         <div>
-                            <a class="font-bold text-lg text-white whitespace-nowrap" href="tel:+79021253645">+7 (902) 125-36-45</a>
+                            <a class="font-bold text-white whitespace-nowrap md:text-2xl text-sm" href="tel:+79021253645">+7 (902) 125-36-45</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +85,7 @@
         </header>
 
         <main class="wrapper">
-            <section class="person py-10 pt-12 relative page-section-1">
+            <section class="person py-10 pt-12 relative page-section-1 wow fadeInUp" data-wow-delay="0.4s"">
                 <img class="sm:absolute -z-10" width="1550" height="750" src="./src/img/person/person-hero.webp"
                     alt="персона-1">
                 <div class="container">
@@ -112,7 +114,7 @@
 
             
 
-            <section class="person-cases py-16 sm:py-24 page-section-2">
+            <section class="person-cases py-16 sm:py-24 page-section-2 wow fadeInUp" data-wow-delay="0.8s"">
                 <div class="container">
                     <h2 class="text-2xl sm:text-7xl uppercase font-droidFontRegular font-bold mb-5 sm:mb-10">Результаты
                         рассмотрения
@@ -183,7 +185,7 @@
                 </div>
             </section>
 
-            <section class="contacts py-10 relative page-section-4">
+            <section class="contacts py-10 relative page-section-4 wow fadeInUp" data-wow-delay="0.9s"">
                 <img class="absolute top-0 left-0 w-full h-full object-cover -z-10" src="./src/img/form-bg.webp">
                 <div class="container">
                     <div class="contacts__wrapper">
@@ -229,7 +231,7 @@
             <section id="popup" class="popup">
                 <div class="popup__body">
                     <div class="popup__content">
-                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <button class="popup__btn close-popup absolute" aria-label="Закрыть" tabindex="4">
                             <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
                                 <path style="fill: #ffffff;"
                                     d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
@@ -267,7 +269,7 @@
                                   sm:top-1/4  md:top-2/4
                                 " src="./src/img/person/case-img-icons.svg" width="233" height="233" alt="">
                                 <div>
-                                    <a class="link block" href="src/case-1.pdf" target="_blank"
+                                    <a class="link block flex items-center justify-center" href="src/case-1.pdf" target="_blank"
                                         rel="noopener noreferrer">Смотреть
                                         дело
                                     </a>
@@ -280,7 +282,7 @@
 
         </main>
 
-        <footer class="footer py-10 page-section-3">
+        <footer class="footer py-10 page-section-3 wow fadeInUp" data-wow-delay=".9s"">
             <div class="container">
                 <div class="footer__wrapper flex flex-wrap justify-between gap-5">
                     <img class="h-[70px]" src="./src/img/footer-logo.png" width="360" height="70" alt="лого">
