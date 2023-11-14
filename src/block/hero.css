@@ -61,6 +61,14 @@
     color: #FA842B;
 }
 
+
+@media(max-width: 1280px) {
+    .hero-item__wrapper-2 {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
 @media(max-width: 767px) {
     .hero-item__wrapper {
         top: 200px;
@@ -78,13 +86,7 @@
     }
 
     .hero-item__wrapper-2 {
-        width: 120vw;
-        left: -150px;
-    }
-}
-
-@media(max-width: 1280px) {
-    .hero-item__wrapper-2 {
-        width: 50vw;
+        width: 96vw;
+        left: -220px;
     }
 }

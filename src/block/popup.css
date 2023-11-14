@@ -88,6 +88,7 @@
 }
 
 .popup__wrapper {
+    z-index: -1;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
@@ -118,4 +119,17 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    .popup__btn {
+        right: 30px;
+    }
+    .popup__text {
+        font-size: 12px;
+    }
+    .popup__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+    }
 }
+
+
